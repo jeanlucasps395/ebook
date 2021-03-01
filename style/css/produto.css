@@ -1,0 +1,154 @@
+.bloco-produto{
+	margin-top: 50px;
+}
+
+.bloco-produto__imagemPrincipal{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+	height: 500px;
+	border-radius: 10px;
+}
+
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.piscar {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1s;
+}
+
+
+
+
+.bloco-produto__titulo	{
+	font-size: 20px;
+}
+.bloco-produto__texto{
+	color: #666;
+}
+.txR{
+	text-align: right;
+}
+
+.txC{
+	text-align: center;
+}
+
+
+.frete_titulo{
+	text-align: right;
+	font-size: 15px;
+	color: #2E3192;
+	padding: 5px 0 5px 20px;
+	margin-bottom: 0;
+
+}
+#cep{
+	background: none;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	color: #292929;
+	padding: 8px 10px;
+	width: 115px;
+	text-align: right;
+}
+
+
+.bloco-produto__texto--frete{
+	font-size: 18px;
+	margin-bottom: 15px;
+	margin-top: 40px;
+}
+.bloco-produto__texto--frete-valor{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+
+.bloco-produto__texto--freteValorBloco{
+	display: none;
+	animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: fadeInUp;
+}
+
+.bloco-produto__texto--freteValor{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.bloco-produto__texto--freteValor-valor{
+	font-size: 18px;
+	color: #2E3192;
+}
+
+.bloco-produto__texto--preco{
+	font-size: 18px;
+}
+.bloco-produto__texto--preco-valor{
+	font-size: 18px;
+	color: #2E3192;
+}
+
+
+.bloco-produto__texto--preco-total{
+	font-size: 20px;
+}
+.bloco-produto__texto--preco-total-valor{
+	font-size: 20px;
+	color: #3F9120;
+}
+
+
+.bloco-produto__cifra{
+	font-size: 15px;
+}
+
+
+.bloco-produto__button{
+	margin: 0 auto;
+	font-size: 25px;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	padding: 15px 0;
+	width: 250px;
+	margin-top: 25px;
+	background: #3F9120;
+	cursor: pointer;
+
+	transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+
+
+.bloco-produto__button:hover{
+	box-shadow: 5px 5px 2px #ddd;
+
+}
+.bloco-produto__button:focus{
+	outline: none;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+	.bloco-produto__imagemPrincipal{
+		height: 250px;
+		margin-bottom: 30px;
+	}
+
+
+	.bloco-produto__titulo	{
+		font-size: 16px;
+	}
+
+
+
+}

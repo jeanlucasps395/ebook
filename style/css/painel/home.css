@@ -1,0 +1,259 @@
+body{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.txR{
+	text-align: right;
+}
+.txC{
+	text-align: center;
+}
+.p0{
+	padding: 0 !important;
+}
+.bgBranco{
+	background: #AA51FF;
+	color: #fff;
+	height: 100%;
+	position: relative;
+	width: 100%; 
+	box-shadow: 4px 0px 2px rgb(0,0,0,0.2);
+}
+
+
+button{
+	cursor: pointer;
+}
+button:focus{
+	outline: none;
+}
+
+@media screen and (min-width: 991px){
+	.bgBranco{
+		padding-bottom: 500px;
+	}
+}
+
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.widhtPadrao{
+	width: 1200px;
+	margin: 0 auto;
+	/*margin-top: 70px;*/
+}
+
+
+
+
+
+
+
+
+/*Lista*/
+
+.bg-painel h1{
+	text-align: left;
+	color: #292929;
+	font-weight: bolder;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 30px;
+}
+.listOptions{
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 4px 4px 4px rgb(0,0,0,0.3);
+	padding: 30px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.headerT .tH{
+	background: #00E5FF;
+	padding: 10px;
+	color: #000;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
+.linhaTR{
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.linhaTR p{
+	margin-top: 10px;
+}
+.buttonEditar{
+	background: #00A61E !important;
+	padding: 8px 40px !important;
+    border-radius: 50px !important;
+    border: none !important;   
+    margin-top: 5px; 
+}
+
+
+.button_remove{
+	background: #F3123C !important;
+	padding: 8px 40px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    width: 150px !important;
+    color: #fff !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}	
+.buttonApagar{
+	background: #F3123C !important;
+	padding: 8px 40px !important;
+    border-radius: 50px !important;
+    border: none !important;   
+    margin-top: 5px; 
+}
+
+
+
+/*Modal*/
+
+	
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal-apagar {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+  z-index: 999;
+}
+
+.modal-box {
+  position: relative;
+  max-width: 400px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+  padding: 20px 40px;
+  background: #F3123C;
+  color: #ffffff;
+}
+.modal-header h1{
+  font-size: 25px;
+}
+
+.modal-body {
+  background: #ECEFF1;
+  padding: 30px 40px;
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+
+.modal-trigger, button {
+  top: 50%;
+  left: 50%;
+  padding: 20px 40px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.modal-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: ease .2s;
+}
+
+.button-modal {
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  color: #333333;
+  background: #F3123C;
+  color: #fff;
+}
+
+.button-modal--cancelar {
+  border-radius: 50px;
+  outline: none;
+  background: none;
+  outline: none;
+  color: #292929;
+  margin-right:  15px;
+}
+
+.modal-trigger:hover {
+  padding: 20px 60px;
+}
+@media screen and (max-width: 450px){
+	.modal-box {
+	    max-width: 290px;
+	}
+	.button-modal--cancelar {
+	  margin-right:  0px;
+	}
+}
