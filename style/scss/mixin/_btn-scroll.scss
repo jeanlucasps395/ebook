@@ -1,0 +1,22 @@
+@mixin btn-scroll {
+	width: 68px;
+	height: 68px;
+	background: $color-detalhes;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 42px;
+	padding-top: 10px;
+	transition: 0.3s all ease-in-out;
+
+	&:hover {
+		background: $color-detalhes-darken;
+	}
+
+	@media (max-width: $screen-md-max) {
+		margin-top: 50px;
+	}
+}
