@@ -1,0 +1,34 @@
+.footer-social-media {
+	background: #f3f3f3;
+	padding: 24px;
+	display: flex;
+	justify-content: center;
+	margin-top: 104px;
+
+	i {
+		width: 20px;
+		height: 20px;
+		border-radius: 50px;
+		background-color: $color-detalhes;
+		color: white;
+		padding: 21px;
+		margin: 0 39px;
+		transition: all 0.2s ease-out;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.2s ease-out;
+		cursor: pointer;
+
+		@media (min-width: $screen-sm-min) {
+			width: 78px;
+			height: 78px;
+			font-size: 39px;
+		}
+
+		&:hover {
+			transform: translateY(-10px);
+            background-color: $color-detalhes-darken;
+		}
+	}
+}

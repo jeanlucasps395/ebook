@@ -8,6 +8,7 @@
 	-webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.31);
 	box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.31);
 	transition: .3s all ease-in-out;
+	outline: none !important;
 
 	&:hover {
 		background: $color-button-darken;
