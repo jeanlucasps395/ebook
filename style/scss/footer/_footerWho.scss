@@ -9,6 +9,14 @@
 
 	.even {
 		background: $color-neutral;
+
+		h2{
+			text-align: end;
+
+			&::before {
+				right: 0;
+			}
+		}
 	}
 
 	p {
@@ -29,7 +37,7 @@
 			content: "";
 			position: absolute;
 			width: 100%;
-			max-width: 383px;
+			max-width: 200px;
 			height: 8px;
 			background: $color-detalhes;
 			border-radius: 50px;

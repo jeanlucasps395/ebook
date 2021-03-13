@@ -7,8 +7,10 @@
 @import "eb-season-emphasis/eb-season-emphasis";
 @import "eb-season-think/eb-season-think";
 
-
 // Footer
 @import "footer/footer-social-media";
 @import "footer/footerMenu";
 @import "footer/footerWho";
+
+@import "slick.scss";
+@import "Slick-Custom/eb-season-slick";

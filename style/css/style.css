@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 1200px) {
   body .container {
     max-width: 1400px;
@@ -165,6 +166,7 @@
   background: #F2F0F7;
   padding-top: 75px;
   padding-bottom: 90px;
+  margin-bottom: 100px;
 }
 .eb-season-think h1 {
   font-size: 50px;
@@ -240,7 +242,6 @@
   padding: 24px;
   display: flex;
   justify-content: center;
-  margin-top: 104px;
 }
 .footer-social-media i {
   width: 20px;
@@ -272,6 +273,7 @@
 .footerMenu {
   text-align: center;
   font-size: 16px;
+  padding: 67px 0 50px 0 !important;
 }
 @media (min-width: 768px) {
   .footerMenu {
@@ -356,6 +358,12 @@
 .footerWho .even {
   background: #F2F0F7;
 }
+.footerWho .even h2 {
+  text-align: end;
+}
+.footerWho .even h2::before {
+  right: 0;
+}
 .footerWho p {
   margin-top: 34px;
 }
@@ -373,11 +381,268 @@
   content: "";
   position: absolute;
   width: 100%;
-  max-width: 383px;
+  max-width: 200px;
   height: 8px;
   background: #00E5FF;
   border-radius: 50px;
   top: -32px;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.eb-season-slick {
+  position: relative;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.eb-season-slick .slick-arrow {
+  border: 0;
+  font-size: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 100px;
+  color: white;
+  background: #00E5FF;
+  transition: 0.3s all ease-in-out;
+  outline: none !important;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.eb-season-slick .slick-arrow:hover {
+  background: #009daf;
+}
+@media (max-width: 1199px) {
+  .eb-season-slick .slick-arrow {
+    width: 50px;
+    height: 50px;
+    padding-top: 0;
+  }
+}
+.eb-season-slick .slick-list {
+  padding: 60px 0 90px 0;
+}
+.eb-season-slick .slick-prev {
+  left: -85px;
+}
+.eb-season-slick .slick-prev:before {
+  content: "";
+  font-size: 42px;
+  font-family: "Font Awesome 5 Pro";
+}
+@media (max-width: 1199px) {
+  .eb-season-slick .slick-prev:before {
+    font-size: 37px;
+  }
+}
+@media (max-width: 1199px) {
+  .eb-season-slick .slick-prev {
+    left: -22px;
+  }
+}
+.eb-season-slick .slick-next {
+  right: -85px;
+}
+.eb-season-slick .slick-next:before {
+  content: "";
+  font-size: 42px;
+  font-family: "Font Awesome 5 Pro";
+}
+@media (max-width: 1199px) {
+  .eb-season-slick .slick-next:before {
+    font-size: 37px;
+  }
+}
+@media (max-width: 1199px) {
+  .eb-season-slick .slick-next {
+    right: -22px;
+  }
+}
+.eb-season-slick__block {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.63);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 16px;
+  margin-left: 16px;
+  border-radius: 17px;
+  outline: none !important;
+}
+.eb-season-slick__img {
+  padding: 31px 31px 13px 31px;
+  display: flex;
+  align-items: center;
+}
+.eb-season-slick__img img {
+  border-radius: 100px;
+  margin-right: 16px;
+}
+.eb-season-slick__avaliation {
+  padding: 0 31px;
+}
+.eb-season-slick__avaliation ul {
+  padding: 0;
+  list-style: none;
+}
+.eb-season-slick__avaliation ul span {
+  margin-right: 17px;
+}
+.eb-season-slick__avaliation ul i {
+  color: #bbbbbb;
+  margin-right: 5px;
+}
+.eb-season-slick__avaliation ul .yellow {
+  color: #ffc400;
+}
+.eb-season-slick__avaliation ul .yellow-v2 {
+  background: linear-gradient(to right, #ffc400 50%, #bbbbbb 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.eb-season-slick__prizeDraw {
+  padding: 0 31px;
+}
+.eb-season-slick__prizeDraw span {
+  margin-left: 12px;
+  color: #0DFF90;
+}
+.eb-season-slick__background {
+  background: url("../img/leragora.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 167px;
+}
+.eb-season-slick__background--text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+.eb-season-slick__background--text a {
+  color: white;
+  font-size: 30px;
+  outline: none !important;
+  transition: 0.3s all ease-in-out;
+}
+.eb-season-slick__background--text a:hover {
+  text-decoration: none;
+  color: silver;
+}
+.eb-season-slick__footer {
+  background: #00E5FF;
+  align-items: center;
+  height: 75px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  padding: 0 31px;
+}
+@media (max-width: 1199px) {
+  .eb-season-slick__footer {
+    padding: 0 14px;
+  }
+}
+.eb-season-slick__footer h6 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.eb-season-slick__footer i {
+  font-size: 31px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -46,6 +46,128 @@
                 <div class="eb-season-emphasis">
                     <h1>E-books em destaque</h1>
                 </div>
+
+                <!-- Slick jobson -->
+                <ul class="eb-season-slick">                    
+                    <li class="eb-season-slick__block"> 
+                        <div class="eb-season-slick__img">
+                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
+                        </div>
+                        <div class="eb-season-slick__avaliation">
+                            <ul class="d-flex">
+                                <span>Nota: </span>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow-v2 fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="eb-season-slick__prizeDraw">
+                            <p>Sorteio: <span>Moto</span></p>
+                        </div>
+                        <div class="eb-season-slick__background">
+                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
+                        </div>
+                        <div class="eb-season-slick__footer d-flex">
+                            <div class="col-10">
+                                <h6>Ver um pouco mais</h6>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="eb-season-slick__block"> 
+                        <div class="eb-season-slick__img">
+                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
+                        </div>
+                        <div class="eb-season-slick__avaliation">
+                            <ul class="d-flex">
+                                <span>Nota: </span>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow-v2 fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="eb-season-slick__prizeDraw">
+                            <p>Sorteio: <span>Moto</span></p>
+                        </div>
+                        <div class="eb-season-slick__background">
+                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
+                        </div>
+                        <div class="eb-season-slick__footer d-flex">
+                            <div class="col-10">
+                                <h6>Ver um pouco mais</h6>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="eb-season-slick__block"> 
+                        <div class="eb-season-slick__img">
+                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
+                        </div>
+                        <div class="eb-season-slick__avaliation">
+                            <ul class="d-flex">
+                                <span>Nota: </span>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow-v2 fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="eb-season-slick__prizeDraw">
+                            <p>Sorteio: <span>Moto</span></p>
+                        </div>
+                        <div class="eb-season-slick__background">
+                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
+                        </div>
+                        <div class="eb-season-slick__footer d-flex">
+                            <div class="col-10">
+                                <h6>Ver um pouco mais</h6>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="eb-season-slick__block"> 
+                        <div class="eb-season-slick__img">
+                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
+                        </div>
+                        <div class="eb-season-slick__avaliation">
+                            <ul class="d-flex">
+                                <span>Nota: </span>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow fas fa-star"></i></li>
+                                <li><i class="yellow-v2 fas fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="eb-season-slick__prizeDraw">
+                            <p>Sorteio: <span>Moto</span></p>
+                        </div>
+                        <div class="eb-season-slick__background">
+                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
+                        </div>
+                        <div class="eb-season-slick__footer d-flex">
+                            <div class="col-10">
+                                <h6>Ver um pouco mais</h6>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                   
+                </ul>
+                <!-- Slick jobson -->
             </div>
         </div>
     </div>

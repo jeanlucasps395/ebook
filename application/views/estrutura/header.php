@@ -26,11 +26,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <link href="<?= base_url('style/css/bootstrap/bootstrap.min.css'); ?>" rel="stylesheet">
   <script src="<?= base_url('style/js/jquery.js'); ?>"></script>
   <script src="<?= base_url('style/js/bootstrap/bootstrap.min.js'); ?>"></script>
+  <script src="<?= base_url('style/js/') ?>script.js"></script>
 
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy6fwubO922dAiPyjWjZbAvgVtOX8Z9u4&libraries=geometry"></script>
 
+  <!-- SLICK -->
+  <!-- <link rel="stylesheet" type="text/css" href="<?= base_url('style/scss/') ?>slick.scss" /> -->
+  <script type="text/javascript" src="<?= base_url('style/js/') ?>slick.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.10.1/css/pro.min.css">
 
@@ -47,6 +51,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
       outline: 0px;
     }
   </style>
+
+  <script type="text/javascript">
+    function openMenuXS() {
+      $('.mobilemenu-block').css('display', 'block');
+    }
+
+    function closeMenuXS() {
+      $('.mobilemenu-block').css('display', 'none');
+    }
+  </script>
 
   <!-- Ancora -->
   <script>
@@ -72,26 +86,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <div class="mobileMenu">
     <div class="mobilemenu-block">
       <p class="mobilemenu-block__times"><i class="far fa-times" onclick="closeMenuXS()"></i></p>
-      <!-- <img src="<?= base_url('style/img/logo.png'); ?>" class="header-block__logo block__logo--mobile"> -->
-      logo
+      <img src="<?= base_url('style/img/logo-footer.png'); ?>" class="header-block__logo block__logo--mobile">
+
       <p>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('home/index'); ?>">Inicio</a>
+          <a class="nav-link atAnc" href="#Contatos">Contatos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('home/meusPedidosPesquisa'); ?>">Meus pedidos</a>
+          <a class="nav-link atAnc" href="#who">Quem Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('home/produtos'); ?>">Produtos</a>
+          <a class="nav-link atAnc" href="#Contatos">Entrar</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link atAnc" href="#Contatos">Fale conosco</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://api.whatsapp.com/send?1=pt_BR&phone=5511998887212"> <i class="fab fa-whatsapp"></i> Contato via Whatsapp </a>
-          <a class="nav-link" href="tel:5511998887212"><i class="fad fa-phone"></i> Ligar pra Wf Colchões</a>
-        </li>
+
       </ul>
       </p>
     </div>
