@@ -114,6 +114,72 @@
 .eb-season-one__text--input i {
   color: #0DFF90;
 }
+.pgCursos .eb-season-one, .search .eb-season-one {
+  margin-bottom: 88px;
+}
+.pgCursos .eb-season-one .eb-season-one__text--input, .search .eb-season-one .eb-season-one__text--input {
+  width: 100%;
+  text-align: center;
+}
+.pgCursos .eb-season-one .eb-season-one__text--input p, .search .eb-season-one .eb-season-one__text--input p {
+  margin-bottom: 65px;
+}
+.description .eb-season-one {
+  margin-bottom: 114px;
+}
+@media (max-width: 991px) {
+  .description .eb-season-one {
+    margin-bottom: 0px;
+  }
+}
+.description .eb-season-one .eb-season-slick__avaliation,
+.description .eb-season-one .eb-season-slick__prizeDraw {
+  padding: 0;
+}
+.description .eb-season-one .eb-season-slick__avaliation p,
+.description .eb-season-one .eb-season-slick__prizeDraw p {
+  color: black;
+}
+.description .eb-season-one .eb-season-slick__avaliation span,
+.description .eb-season-one .eb-season-slick__prizeDraw span {
+  color: #000;
+}
+.description .eb-season-one .eb-season-one__text--title strong {
+  margin-right: 17px;
+}
+.description .eb-season-one .eb-season-one__text--title span {
+  margin-right: 0;
+}
+.description .eb-season-one .eb-season-one__text--title ul {
+  margin-bottom: 0;
+}
+.description .eb-season-one .eb-season-one__text p {
+  margin-bottom: 35px;
+}
+.eb-season-one .eb-season-price h1 {
+  margin: 48px 0;
+  font-size: 50px;
+}
+@media (max-width: 991px) {
+  .eb-season-one .eb-season-price h1 {
+    font-size: 40px;
+  }
+}
+.eb-season-one .eb-season-price h1 span {
+  font-size: 30px;
+}
+.eb-season-one .eb-season-price .btn-principal {
+  width: 305px;
+  background: #FF2C0D;
+  font-weight: bold;
+}
+.eb-season-one .eb-season-price .btn-principal:hover {
+  background: #cc250b;
+}
+
+div#season {
+  margin-top: 37px;
+}
 
 .eb-button-scroll {
   display: flex;
@@ -642,6 +708,115 @@
   font-size: 20px;
 }
 .eb-season-slick__footer i {
+  font-size: 31px;
+}
+
+.eb-season-search {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.eb-season-search__block {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.63);
+  margin-top: 62px;
+  margin-bottom: 0;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 17px;
+  outline: none !important;
+  width: 430px;
+}
+@media (max-width: 991px) {
+  .eb-season-search__block {
+    width: 320px;
+  }
+}
+.eb-season-search__img {
+  padding: 31px 31px 13px 31px;
+  display: flex;
+  align-items: center;
+}
+.eb-season-search__img img {
+  border-radius: 100px;
+  margin-right: 16px;
+}
+.eb-season-search__avaliation {
+  padding: 0 31px;
+}
+.eb-season-search__avaliation ul {
+  padding: 0;
+  list-style: none;
+}
+.eb-season-search__avaliation ul span {
+  margin-right: 17px;
+}
+.eb-season-search__avaliation ul i {
+  color: #bbbbbb;
+  margin-right: 5px;
+}
+.eb-season-search__avaliation ul .yellow {
+  color: #ffc400;
+}
+.eb-season-search__avaliation ul .yellow-v2 {
+  background: linear-gradient(to right, #ffc400 50%, #bbbbbb 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.eb-season-search__prizeDraw {
+  padding: 0 31px;
+}
+.eb-season-search__prizeDraw span {
+  margin-left: 12px;
+  color: #0DFF90;
+}
+.eb-season-search__background {
+  background: url("../img/leragora.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 167px;
+}
+.eb-season-search__background--text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+.eb-season-search__background--text a {
+  color: white;
+  font-size: 30px;
+  outline: none !important;
+  transition: 0.3s all ease-in-out;
+}
+.eb-season-search__background--text a:hover {
+  text-decoration: none;
+  color: silver;
+}
+.eb-season-search__footer {
+  background: #00E5FF;
+  align-items: center;
+  height: 75px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  padding: 0 31px;
+}
+@media (max-width: 1199px) {
+  .eb-season-search__footer {
+    padding: 0 14px;
+  }
+}
+.eb-season-search__footer h6 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.eb-season-search__footer i {
   font-size: 31px;
 }
 

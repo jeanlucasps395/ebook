@@ -4,7 +4,7 @@
 .eb-season-one {
 	margin-top: 50px;
 
-	@media (min-width: $screen-lg-min){
+	@media (min-width: $screen-lg-min) {
 		margin-top: 90px;
 	}
 
@@ -21,7 +21,7 @@
 		font-weight: bold;
 		font-size: 15px;
 		margin-top: 10px;
-		
+
 		@media (min-width: $screen-lg-min) {
 			margin-top: 19px;
 			font-size: 30px;
@@ -99,4 +99,86 @@
 			}
 		}
 	}
+
+	.pgCursos & ,
+	.search & {
+		margin-bottom: 88px;
+
+		.eb-season-one__text--input {
+			width: 100%;
+			text-align: center;
+
+			p {
+				margin-bottom: 65px;
+			}
+		}
+	}
+
+	.description & {
+		margin-bottom: 114px;
+
+		@media (max-width: $screen-sm-max) {
+			margin-bottom: 0px;
+		}
+
+		.eb-season-slick__avaliation,
+		.eb-season-slick__prizeDraw {
+			padding: 0;
+
+			p {
+				color: black;
+			}
+
+			span {
+				color: #000;
+			}
+		}
+
+		.eb-season-one__text--title {
+			strong {
+				margin-right: 17px;
+			}
+			span {
+				margin-right: 0;
+			}
+
+			ul {
+				margin-bottom: 0;
+			}
+		}
+
+		.eb-season-one__text {
+			p {
+				margin-bottom: 35px;
+			}
+		}
+	}
+
+	.eb-season-price {
+		h1 {
+			margin: 48px 0;
+			font-size: 50px;
+
+			@media (max-width: $screen-sm-max) {
+				font-size: 40px;
+			}
+
+			span {
+				font-size: 30px;
+			}
+		}
+		.btn-principal {
+			width: 305px;
+			background: $color-button-v2;
+			font-weight: bold;
+
+			&:hover {
+				background: $color-button-darken-v2;
+			}
+		}
+	}
+}
+
+div#season {
+	margin-top: 37px;
 }
