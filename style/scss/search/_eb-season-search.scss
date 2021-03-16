@@ -1,0 +1,130 @@
+@import "../mixin/arrows";
+
+.eb-season-search {
+	display: flex;
+	justify-content: end;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 0;
+	list-style: none;
+	font: {
+		size: 20px;
+		weight: bold;
+	}
+
+	&__block {
+		-webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.63);
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.63);
+		margin: {
+			top: 62px;
+			bottom: 0;
+			right: 6px;
+			left: 6px;
+		}
+		border-radius: 17px;
+		outline: none !important;
+		width: 430px;
+		
+		@media (max-width: $screen-sm-max){
+			width: 320px;			
+		}
+	}
+
+	&__img {
+		padding: 31px 31px 13px 31px;
+		display: flex;
+		align-items: center;
+
+		img {
+			border-radius: 100px;
+			margin-right: 16px;
+		}
+	}
+
+	&__avaliation {
+		padding: 0 31px;
+		ul {
+			padding: 0;
+			list-style: none;
+
+			span {
+				margin-right: 17px;
+			}
+
+			i {
+				color: #bbbbbb;
+				margin-right: 5px;
+			}
+			.yellow {
+				color: #ffc400;
+			}
+
+			.yellow-v2 {
+				background: linear-gradient(to right, #ffc400 50%, #bbbbbb 0);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	&__prizeDraw {
+		padding: 0 31px;
+
+		span {
+			margin-left: 12px;
+			color: $color-principal;
+		}
+	}
+
+	&__background {
+		background: url("../img/leragora.png") center center no-repeat;
+		background-size: cover;
+		position: relative;
+		height: 167px;
+
+		&--text {
+			position: absolute;
+			top: 40%;
+			width: 100%;
+			text-align: center;
+
+			a {
+				color: white;
+				font-size: 30px;
+				outline: none !important;
+				transition: 0.3s all ease-in-out;
+
+				&:hover {
+					text-decoration: none;
+					color: rgb(192, 192, 192);
+				}
+			}
+		}
+	}
+
+	&__footer {
+		background: $color-detalhes;
+		align-items: center;
+		height: 75px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 17px;
+		border-bottom-left-radius: 17px;
+		padding: 0 31px;
+
+		@media (max-width: $screen-md-max) {
+			padding: 0 14px;
+		}
+
+		h6 {
+			font: {
+				weight: bold;
+				size: 20px;
+			}
+		}
+
+		i {
+			font-size: 31px;
+		}
+	}
+}

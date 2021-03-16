@@ -28,6 +28,7 @@
             $senha = $this->input->post('senha');
             echo json_encode($this->logar($login, $senha));
         }
+
         function logar($login, $senha){
             // consultar se o usuairo pode logar
             return true;
@@ -66,5 +67,15 @@
             // $this->load->view('estrutura/footer');
         }
 
+        function pgCursos(){
+            $this->load->view('estrutura/header');
+            $this->load->view('pgCursos');
+            $this->load->view('estrutura/footer-v2');
+        }
+        function search(){
+            $this->load->view('estrutura/header');
+            $this->load->view('search');
+            $this->load->view('estrutura/footer-v2');
+        }
+
     }
-?>

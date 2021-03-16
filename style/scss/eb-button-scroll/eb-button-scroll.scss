@@ -1,0 +1,9 @@
+@import "../mixin/btn-scroll";
+
+.eb-button-scroll {
+	display: flex;
+	justify-content: center;
+	i {
+		@include btn-scroll();
+	}
+}

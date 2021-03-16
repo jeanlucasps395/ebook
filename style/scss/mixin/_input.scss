@@ -1,0 +1,10 @@
+@mixin input {
+	border: 0;
+	border-bottom: 1px solid #a5a5a5;
+	width: 100%;
+	max-width: 527px;
+
+	@media (max-width: $screen-md-max) {
+		width: 94%;
+	}
+}

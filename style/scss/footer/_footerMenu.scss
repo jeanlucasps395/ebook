@@ -1,0 +1,72 @@
+@import "../mixin/button";
+
+.footerMenu {
+	text-align: center;
+	font-size: 16px;
+	padding: 67px 0 50px 0 !important;
+
+	@media (min-width: $screen-sm-min) {
+		display: flex;
+		text-align: left;
+		align-items: center;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin: {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 33px;
+            };
+            font-size: 25px;
+            
+            @media (max-width: $screen-md-max){
+                font-size: 17px;                
+            }
+
+			a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+
+	&__block {
+		&--btn {
+			input {
+				border: 1px solid white;
+				border-radius: 53px;
+				background: transparent;
+				color: white;
+				padding: 15px;
+				width: 70%;
+			}
+
+			::-webkit-input-placeholder {
+				color: #fff;
+			}
+			input:-moz-placeholder {
+				color: #fff;
+			}
+			textarea:-moz-placeholder {
+				color: #fff;
+			}
+
+			button {
+				@include button();
+				max-width: 105px;
+				padding: 9px 24px !important;
+				font-size: 25px !important;
+			}
+		}
+	}
+
+	&__img {
+		margin-top: 0 !important;
+		margin-bottom: 92px !important;
+	}
+}

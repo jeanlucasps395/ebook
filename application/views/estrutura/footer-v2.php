@@ -55,62 +55,6 @@
     </div>
     <!-- Formulario  -->
 
-    <!-- Quem Somos -->
-    <div class="footerWho">
-        <div class="footerWho__text">
-            <div class="widthPadrao">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Quem somos?</h2>
-                        <p>
-                            <i>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d
-                                olore magna aliqua. Ut enim ad minim vem Ut enim ad minim vem Ut enim ad minim vem Ut eniad minim
-                                vemUt enim ad minim vem Ut enim ad minim vemUt enim ad minim vemUt enim ad minia"
-                            </i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footerWho__text even">
-            <div class="widthPadrao">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>O que buscamos?</h2>
-                        <p>
-                            <i>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d
-                                olore magna aliqua. Ut enim ad minim vem Ut enim ad minim vem Ut enim ad minim vem Ut eniad minim
-                                vemUt enim ad minim vem Ut enim ad minim vemUt enim ad minim vemUt enim ad minia"
-                            </i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footerWho__text">
-            <div class="widthPadrao">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>O que podemos fazer por você ?</h2>
-                        <p>
-                            <i>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d
-                                olore magna aliqua. Ut enim ad minim vem Ut enim ad minim vem Ut enim ad minim vem Ut eniad minim
-                                vemUt enim ad minim vem Ut enim ad minim vemUt enim ad minim vemUt enim ad minia"
-                            </i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- Quem Somos -->
-
     <div class="footer-social-media">
         <i class="fab fa-instagram"></i>
         <i class="fab fa-facebook-f"></i>

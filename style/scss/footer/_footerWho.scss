@@ -1,0 +1,47 @@
+.footerWho {
+	margin-top: 176px;
+
+    .footerWho__text{
+        padding-top: 72px;
+        padding-bottom: 96px;
+        margin-top: 77px;
+    }
+
+	.even {
+		background: $color-neutral;
+
+		h2{
+			text-align: end;
+
+			&::before {
+				right: 0;
+			}
+		}
+	}
+
+	p {
+		margin-top: 34px;
+		i {
+			font-size: 30px;
+			color: $color-font-v2;
+		}
+	}
+
+	h2 {
+		font-size: 50px;
+		font-weight: bold;
+		margin-bottom: 34px;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			max-width: 200px;
+			height: 8px;
+			background: $color-detalhes;
+			border-radius: 50px;
+			top: -32px;
+		}
+	}
+}
