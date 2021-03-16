@@ -647,17 +647,22 @@ $(document).ready(function () {
 		],
 	});
 	
-	$(function () {
-		$(".atAnc").on("click", function (e) {
-			e.preventDefault();
-			$("html, body").animate(
-				{
-					scrollTop: $($(this).attr("href")).offset().top,
-				},
-				500,
-				"linear"
-			);
-			closeMenuXS();
-		});
-	});
+	// $(function () {
+	// 	$(".atAnc").on("click", function (e) {
+	// 		e.preventDefault();
+	// 		$("html, body").animate(
+	// 			{
+	// 				scrollTop: $($(this).attr("href")).offset().top,
+	// 			},
+	// 			500,
+	// 			"linear"
+	// 		);
+	// 		closeMenuXS();
+	// 	});
+	// });
+
+	$('a#modalLogin, .blackout, i#close').on('click', function () {		
+		$('.blackout, .modal__body').toggleClass('show');
+		$('body').toggleClass('block');
+	})
 });

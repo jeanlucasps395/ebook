@@ -97,7 +97,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
           <a class="nav-link atAnc" href="#who">Quem Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link atAnc" href="#Contatos">Entrar</a>
+          <a class="nav-link" id="modalLogin" href="#">Entrar</a>
         </li>
 
       </ul>
@@ -105,9 +105,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
   </div>
 
-  <div class="background-header">
+  <div class="background-header container-fluid">
 
-    <nav class="navbar navbar-expand-md navbar-dark header-block widthPadrao">
+    <nav class="navbar navbar-expand-md navbar-dark header-block">
 
       <div class="col-xl-7 col-lg-5 col-md-4 col-sm-6 col-6">
         <a class="navbar-brand" href="<?= base_url('home/index'); ?>">
@@ -137,7 +137,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
               <a class="nav-link" href="<?= base_url('home/produtos'); ?>">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link atAnc" href="#Contatos">Entrar</a>
+              <a class="nav-link" id="modalLogin" href="#">Entrar</a>
             </li>
           </ul>
         </div>
@@ -151,6 +151,32 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <input type="password" id="senha" name="login">
   <button onclick="acesso()">Enviar</button>
 </div> -->
+
+  <!-- background -->
+  <div class="blackout">
+  </div>
+  <!-- background -->
+  <div class="modal__body">
+    <div class="modal__close"><i id="close" class="fas fa-times"></i></div>
+    <div class="modal__title">
+      <p>Acessar minha conta</p>
+    </div>
+    <div class="modal__inputs">
+      <label for="login">E-mail</label>
+      <input type="" id="login" name="login" placeholder="Digite seu e-mail de acesso">
+    </div>
+    <div class="modal__inputs">
+      <label for="login">Senha</label>
+      <input type="password" id="senha" name="login" placeholder="Digite sua senha">
+    </div>
+    <div class="modal__login d-flex">
+      <a href="#" class="col-6">Esqueci minha senha</a>
+      <button class="col-6" onclick="acesso()">Enviar</button>
+    </div>
+    <div class="modal__footer">
+      <a href="#">Ainda não tenho uma conta</a>
+    </div>
+  </div>
 
   <script type="text/javascript">
     function acesso() {

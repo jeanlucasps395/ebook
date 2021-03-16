@@ -1,0 +1,91 @@
+@import "../mixin/button";
+
+.modal__body {
+	display: none;
+	background: white;
+	border-radius: 17px;
+	position: absolute;
+	z-index: 9999;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 32px;
+	width: 100%;
+	max-width: 495px;
+	left: 35%;
+	right: auto;
+	// margin: 0 auto;
+	// top: 20%;
+	// left: 38%;
+	// right: auto;
+
+	@media (max-width: $screen-sm-max) {
+		left: 0;
+		top: 0;
+		border-radius: 0;
+		max-width: 100%;
+	}
+
+	.modal__close {
+		text-align: right;
+		color: $color-principal;
+		cursor: pointer;
+	}
+
+	.modal__title {
+		text-align: center;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	.modal__inputs {
+		font-size: 23px;
+		font-weight: normal;
+		display: flex;
+		flex-direction: column;
+
+		label {
+			margin-bottom: 14px;
+			margin-top: 32px;
+		}
+
+		input {
+			width: 100%;
+			border: 1px solid #707070;
+			border-radius: 50px;
+			background: none;
+			padding: 12px 10px 12px 27px;
+		}
+	}
+
+	.modal__login {
+		align-items: center;
+		margin: 32px 0;
+
+		a {
+			font-size: 18px;
+			text-decoration: none;
+			font-weight: normal;
+			color: black;
+		}
+
+		button {
+			@include button();
+			font-weight: bold;
+			font-size: 25px !important;
+		}
+	}
+
+	.modal__footer {
+		text-align: center;
+		margin: 55px 0;
+
+		a {
+			font-size: 18px;
+			font-weight: normal;
+			color: black;
+			text-decoration: underline;
+		}
+	}
+}

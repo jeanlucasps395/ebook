@@ -123,3 +123,22 @@ input[type="text"]{
 	width: 200px;
 	margin-top: 5px;
 }
+
+.blackout{    
+	display: none;
+	background: black;
+    opacity: 0.7;
+    position: fixed;
+    width: 100vw;
+	height: 100vh;
+    z-index: 1003;
+    top: 0;
+}
+
+.show {
+	display: block;
+}
+
+.block{
+	overflow: hidden;
+}
