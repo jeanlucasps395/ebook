@@ -5,44 +5,45 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 p0SM">
                     <div class="footerContact-form" id="contato">
-                        <div id="formRodape">
-                            <div class="footerContact-form__marg">
-                                <label class="footerContact-form__label">Nome</label>
-                                <input class="footerContact-form__input" type="text" name="" placeholder="nome" id="nomelCliente">
-                            </div>
+                        <form action="<?= base_url('home/cadastrar'); ?>" method="post">
+                            <div id="formRodape">
+                                <div class="footerContact-form__marg">
+                                    <label class="footerContact-form__label">Nome</label>
+                                    <input class="footerContact-form__input" type="text" name="nome" placeholder="nome" id="nomelCliente" required="">
+                                </div>
 
-                            <div class=" footerContact-form__marg">
-                                <label class="footerContact-form__label">Email</label>
-                                <input class="footerContact-form__input" type="email" name="" placeholder="email" id="emailCliente">
-                            </div>
+                                <div class=" footerContact-form__marg">
+                                    <label class="footerContact-form__label">Email</label>
+                                    <input class="footerContact-form__input" type="email" name="email" placeholder="email" id="emailCliente" required="">
+                                </div>
 
-                            <div class=" footerContact-form__marg">
-                                <label class="footerContact-form__label">CPF</label>
-                                <input class="footerContact-form__input" type="text" name="" placeholder="cpf" id="cpfCliente">
-                            </div>
+                                <div class=" footerContact-form__marg">
+                                    <label class="footerContact-form__label">CPF</label>
+                                    <input class="footerContact-form__input" type="text" name="cpf" placeholder="cpf" id="cpfCliente" required="">
+                                </div>
 
-                            <div class=" footerContact-form__marg">
-                                <label class="footerContact-form__label">Telefone</label>
-                                <input class="footerContact-form__input" type="text" name="" placeholder="tel" id="telCliente">
-                            </div>
+                                <div class=" footerContact-form__marg">
+                                    <label class="footerContact-form__label">Telefone</label>
+                                    <input class="footerContact-form__input" type="text" name="telefone" placeholder="tel" id="telCliente" required="">
+                                </div>
 
-                            <div class=" footerContact-form__marg">
-                                <label class="footerContact-form__label">Senha</label>
-                                <input class="footerContact-form__input" type="password" name="" placeholder="Senha" id="SenhaCliente">
-                            </div>
+                                <div class=" footerContact-form__marg">
+                                    <label class="footerContact-form__label">Senha</label>
+                                    <input class="footerContact-form__input" type="password" name="senha" placeholder="Senha" id="SenhaCliente" required="">
+                                </div>
 
-                            <div class="footerContact-form__marg margCenter">
-                                <button class="footerContact-form__button" onclick="enviarEmailRodape()">Cadastre-se</button>
+                                <div class="footerContact-form__marg margCenter">
+                                    <button class="footerContact-form__button" >Cadastre-se</button>
+                                </div>
+                            </div>
+                            <div class="emailEnviado" id="emailEnviado">
+                                <h2 class="footerContact__titulo">
+                                    <i class="fad fa-badge-check"></i>
+                                </h2>
+                                <p class="footerContact__subtitulo--footer">Email enviado com sucesso.</p>
                             </div>
                         </div>
-                        <div class="emailEnviado" id="emailEnviado">
-                            <h2 class="footerContact__titulo">
-                                <i class="fad fa-badge-check"></i>
-                            </h2>
-                            <p class="footerContact__subtitulo--footer">Email enviado com sucesso.</p>
-                        </div>
-
-                    </div>
+                    </form>
                 </div>
                 <div class="col-md-6 col-sm-12 p0SM d-none d-md-block">
                     <div class="footerContact__espacemento">

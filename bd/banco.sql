@@ -18,7 +18,7 @@ create table eb_usuario(
 	id_usuario int auto_increment primary key,
 	nome varchar(80),
 	email varchar(80),
-	senha varchar(30),
+	senha varchar(80),
 	cpf varchar(11),
 	dt_nasc date,
 	telefone varchar(15),	

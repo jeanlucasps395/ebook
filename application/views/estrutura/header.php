@@ -50,6 +50,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
       /*border: 0px solid #041239;*/
       outline: 0px;
     }
+
   </style>
 
   <script type="text/javascript">
@@ -96,9 +97,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <li class="nav-item">
           <a class="nav-link atAnc" href="#quemSomos">Quem Somos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="modalLogin" href="#">Entrar</a>
-        </li>
+        <?php if($this->session->userdata('email') != null){ ?> 
+          <li class="nav-item">
+            <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="<?= base_url('home/sair'); ?>">Sair</a>
+          </li>
+        <?php } else { ?>
+          <li class="nav-item">
+              <a class="nav-link" id="modalLogin" href="#">Entrar</a>
+          </li>
+        <?php } ?>
 
       </ul>
       </p>
@@ -136,9 +146,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <li class="nav-item">
               <a class="nav-link" href="#quemSomos">Quem somos</a>
             </li>
+
+            <?php if($this->session->userdata('email') != null){ ?> 
+              <li class="nav-item">
+                <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="<?= base_url('home/sair'); ?>">Sair</a>
+              </li>
+            <?php } else { ?>
             <li class="nav-item">
-              <a class="nav-link" id="modalLogin" href="#">Entrar</a>
+                <a class="nav-link" id="modalLogin" href="#">Entrar</a>
             </li>
+            <?php } ?>
+
           </ul>
         </div>
       </div>
@@ -197,9 +218,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
       }
       $.ajax(settings).done(function(response) {
         console.log(response);
-        if (response == 'true') {
+        if (response == '"true"') {
           var url = "<?php echo base_url('home/logando'); ?>" + "?login=" + login + "&senha=" + senha;
           window.location.href = url;
+        }else{
+          alert('usuário não encontrado');
         }
       });
     }
