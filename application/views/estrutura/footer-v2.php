@@ -32,7 +32,7 @@
                             </div>
 
                             <div class="footerContact-form__marg margCenter">
-                                <button class="footerContact-form__button" onclick="enviarEmailRodape()">Enviar</button>
+                                <button class="footerContact-form__button" onclick="enviarEmailRodape()">Cadastre-se</button>
                             </div>
                         </div>
                         <div class="emailEnviado" id="emailEnviado">
@@ -55,7 +55,7 @@
     </div>
     <!-- Formulario  -->
 
-    <div class="footer-social-media">
+    <div class="footer-social-media V2">
         <i class="fab fa-instagram"></i>
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>

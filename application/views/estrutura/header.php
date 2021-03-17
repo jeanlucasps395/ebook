@@ -70,7 +70,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
           e.preventDefault();
           $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
-          }, 500, 'linear');
+          }, 100, 'linear');
           closeMenuXS();
         });
       });
@@ -91,10 +91,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
       <p>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link atAnc" href="#Contatos">Contatos</a>
+          <a class="nav-link atAnc" href="#contato">Contatos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link atAnc" href="#who">Quem Somos</a>
+          <a class="nav-link atAnc" href="#quemSomos">Quem Somos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="modalLogin" href="#">Entrar</a>
@@ -131,10 +131,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('home/meusPedidosPesquisa'); ?>">Contatos</a>
+              <a class="nav-link" href="#contato">Contatos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('home/produtos'); ?>">Quem somos</a>
+              <a class="nav-link" href="#quemSomos">Quem somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="modalLogin" href="#">Entrar</a>
