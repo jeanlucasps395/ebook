@@ -664,5 +664,16 @@ $(document).ready(function () {
 	$('a#modalLogin, .blackout, i#close').on('click', function () {		
 		$('.blackout, .modal__body').toggleClass('show');
 		$('body').toggleClass('block');
-	})
+	});
+
+	$(function () {
+		$('a[href*="#"]:not([href="#"])').click(function () {
+			var target = $(this.hash);
+	
+			if (target.length) {
+				$("html, body").animate({ scrollTop: target.offset().top }, 1000);
+				return false;
+			}
+		});
+	});
 });

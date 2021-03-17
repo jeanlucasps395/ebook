@@ -13,6 +13,7 @@
 }
 .background-header{
 	background: #0D67FF;
+	height: 90px;	
 }
 .header-block{
     /*margin-top: 17px;*/
@@ -62,6 +63,10 @@ input[type="text"]{
 	}
 
 }
+.navbar-collapse{
+	margin-top: 15px !important;
+}
+
 @media screen and (max-width: 768px){
 	.navbar-collapse{
 		margin-top: 40px !important;
@@ -73,6 +78,13 @@ input[type="text"]{
 	    z-index: 9 !important;
 	    border-radius: 17px !important;
 	}
+	.background-header {
+		height: unset;
+	}
+}
+.navbar-nav{
+	display: flex;
+	align-items: center;
 }
 
 @media screen and (max-width: 576px){
