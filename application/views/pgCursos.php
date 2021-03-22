@@ -7,6 +7,49 @@
                         <p>O que você gostaria de ler hoje?</p>
                         <input type="text" name="" id="" placeholder="Marketin Digital"><span><i class="fas fa-search"></i></span>
                     </div>
+                    <div class="eb-season-one__seach">
+                        <ul>
+                            <li>
+                                <h1>Engenharia da computação</h1>
+                                <div class="eb-season-slick__avaliation">
+                                    <ul class="d-flex">
+                                        <span><strong>Nota: </strong></span>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow-v2 fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>Engenharia da computação</h1>
+                                <div class="eb-season-slick__avaliation">
+                                    <ul class="d-flex">
+                                        <span><strong>Nota: </strong></span>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow-v2 fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>Engenharia da computação</h1>
+                                <div class="eb-season-slick__avaliation">
+                                    <ul class="d-flex">
+                                        <span><strong>Nota: </strong></span>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow-v2 fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

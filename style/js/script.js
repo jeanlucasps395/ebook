@@ -192,52 +192,52 @@ $(document).ready(function () {
 	// 		$this.val( valor );
 	// 	});
 
-	// 	// Validador de CPF
-	// 	$(".validar_cpf").focusout(function(){
+	// Validador de CPF
+	// $("#cpfCliente").focusout(function(){
 
-	// 		if($(this).val() != '') {
+	// 	if($(this).val() != '') {
 
-	// 		valor = jQuery.trim($(this).val());
+	// 	valor = jQuery.trim($(this).val());
 
-	//         exp = /\.|\-|\//g;
-	// 	    cpf = valor.toString().replace(exp, "" );
+	//     exp = /\.|\-|\//g;
+	//     cpf = valor.toString().replace(exp, "" );
 
-	//         while(cpf.length < 11) cpf = "0"+ cpf;
-	//         var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
-	//         var a = [];
-	//         var b = new Number;
-	//         var c = 11;
-	//         for (i=0; i<11; i++){
-	//             a[i] = cpf.charAt(i);
-	//             if (i < 9) b += (a[i] * --c);
-	//         }
-	//         if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11-x }
-	//         b = 0;
-	//         c = 11;
-	//         for (y=0; y<10; y++) b += (a[y] * c--);
-	//         if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11-x; }
-	// 	        if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) {
+	//     while(cpf.length < 11) cpf = "0"+ cpf;
+	//     var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+	//     var a = [];
+	//     var b = new Number;
+	//     var c = 11;
+	//     for (i=0; i<11; i++){
+	//         a[i] = cpf.charAt(i);
+	//         if (i < 9) b += (a[i] * --c);
+	//     }
+	//     if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11-x }
+	//     b = 0;
+	//     c = 11;
+	//     for (y=0; y<10; y++) b += (a[y] * c--);
+	//     if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11-x; }
+	//         if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) {
 
-	// 	         	toast('CPF', 'CPF inválido!','error');
-	// 	         	erro_cpf = true;
-	// 	         	$(this).closest('.form-group').removeClass('has-success');
-	// 			    $(this).closest('.form-group').addClass('has-error');
+	//          	toast('CPF', 'CPF inválido!','error');
+	//          	erro_cpf = true;
+	//          	$(this).closest('.form-group').removeClass('has-success');
+	// 		    $(this).closest('.form-group').addClass('has-error');
 
-	// 	     	} else {
+	//      	} else {
 
-	// 	     		erro_cpf = false;
-	// 	     		$(this).closest('.form-group').removeClass('has-error');
-	// 			    $(this).closest('.form-group').addClass('has-success');
+	//      		erro_cpf = false;
+	//      		$(this).closest('.form-group').removeClass('has-error');
+	// 		    $(this).closest('.form-group').addClass('has-success');
 
-	// 	     	}
+	//      	}
 
-	//         } else {
+	//     } else {
 
-	//         	erro_cpf = false;
+	//     	erro_cpf = false;
 
-	//         }
+	//     }
 
-	// 	});
+	// });
 
 	// 	// Validador de CNPJ
 	// 	$(".validar_cnpj").focusout(function(){
@@ -646,34 +646,33 @@ $(document).ready(function () {
 			},
 		],
 	});
-	
-	// $(function () {
-	// 	$(".atAnc").on("click", function (e) {
-	// 		e.preventDefault();
-	// 		$("html, body").animate(
-	// 			{
-	// 				scrollTop: $($(this).attr("href")).offset().top,
-	// 			},
-	// 			500,
-	// 			"linear"
-	// 		);
-	// 		closeMenuXS();
-	// 	});
-	// });
 
-	$('a#modalLogin, .blackout, i#close').on('click', function () {		
-		$('.blackout, .modal__body').toggleClass('show');
-		$('body').toggleClass('block');
+	// Abre o box do input barra de pesquisa
+	$(".eb-season-one__text--input").on("click", function () {
+		$(".eb-season-one__seach").toggleClass("show");
+	});
+
+	$("a#modalLogin, .blackout, i#close").on("click", function () {
+		$(".blackout, .modal__body").toggleClass("show");
+		$("body").toggleClass("block");
 	});
 
 	$(function () {
 		$('a[href*="#"]:not([href="#"])').click(function () {
 			var target = $(this.hash);
-	
+
 			if (target.length) {
 				$("html, body").animate({ scrollTop: target.offset().top }, 1000);
 				return false;
 			}
 		});
 	});
+
+	// PLUGIN MASK
+	$("#cpfCliente").mask("000.000.000-00", { reverse: true });
+	$("#telCliente").mask("(00) 00000-0000");	
+
+	// if ($("#cpfCliente").val() == "00000000000") {
+	// 	console.log('Cpf Inválido')
+	// }
 });
