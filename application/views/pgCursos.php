@@ -30,10 +30,11 @@
             <div class="row">
                 <div id="season" class="eb-season-one d-md-flex d-block">
                     <div class="eb-season-one__img col-12 col-md-6">
-                        <img src="https://via.placeholder.com/485x642/243e66">
+                        <!-- <img src="https://via.placeholder.com/485x642/243e66"> -->
+                        <img src="<?= base_url(); ?>/style/img/bg-curso.png">
                         <div class="eb-season-one__img--text">
                             <h3>Engenharia da computação</h3>
-                            <button>Ler agora</button>
+                            <!-- <button>Ler agora</button> -->
                         </div>
                     </div>
                     <div class="eb-season-one__text col-12 col-md-6">
@@ -65,7 +66,12 @@
 
                         <div class="eb-season-price">
                             <h1><strong>Preço: R$ 20,<span>90</span></strong></h1>
-                            <button class="btn-principal">Comprar</button>
+                            <?php if($this->session->userdata('email') != null){?>
+                                <!-- go to checkout, but open de modal now -->
+                                <button class="btn-principal" onclick="oepnModalLook()">Comprar</button>
+                            <?php }else{ ?>
+                                <button class="btn-principal" onclick="requestLogin()">Comprar</button>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

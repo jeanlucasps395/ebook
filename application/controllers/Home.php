@@ -43,6 +43,7 @@
             if($this->input->get('login') != null ){
                 $login = $this->input->get('login');
                 $senha = $this->input->get('senha');
+                $url_atual = $this->input->get('url');
             }   
             else{
                 $login = $email;
@@ -56,7 +57,11 @@
                 $this->session->set_userdata($user);
                 $this->session->unset_userdata('senha');
                 if($this->validate_session() == true) {
-                    header("location: ".base_url('home/areaLogada'));
+                    if(isset($url_atual)){
+                        header("location: ".$url_atual);
+                    }else{
+                        header("location: ".base_url('home/areaLogada'));
+                    }
                 } 
             }else{
                 return false;
@@ -123,6 +128,19 @@
         function sair(){
             $this->session->sess_destroy();
             header("location: ".base_url('home/index'));
-        }        
+        }       
+
+
+        function gerarnumero(){
+            $ch = curl_init("http://127.0.0.1/ebook-rifas/rifas/home/compraefetuada");
+
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+
+            curl_exec($ch);
+           
+            curl_close($ch);
+
+            echo json_encode($ch);
+        } 
 
     }

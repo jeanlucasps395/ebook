@@ -167,12 +167,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
   </div>
 
-  <!-- <div>
-  <input type="" id="login" name="login">
-  <input type="password" id="senha" name="login">
-  <button onclick="acesso()">Enviar</button>
-</div> -->
-
   <!-- background -->
   <div class="blackout">
   </div>
@@ -199,6 +193,70 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
   </div>
 
+
+
+
+
+
+
+  <!-- Modal provisoria sorteio -->
+  <div id="modalSorteio">
+    <div class="modalSorteio__background" onclick="closeModalSorteio()"></div>
+    <div class="modalSorteio__body">
+        <p class="modalSorteio__body--title">Parabéns pela compra <span><?= $this->session->userdata('nome'); ?></span>, seu número é:</p>
+        <p class="modalSorteio__body--number" id="numerosorte">00000</p>
+        <p class="modalSorteio__body--obs">O seu número de sorteio é único, estamos te enviando por email também, guarde-o com seguranaça.</p>
+    </div>
+  </div>
+
+  <style type="text/css">
+    #modalSorteio{
+      display: none;
+    }
+    .modalSorteio__background{
+      position: fixed;
+      background: #000;
+      opacity: .40;
+      width: 100%;
+      height: 150%;
+      z-index: 99;
+      margin-top: -150px;
+    }
+    .modalSorteio__body{
+      position: fixed;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 4px rgb(0,0,0,0.2);
+      padding: 45px 20px 30px 20px;
+      width: 600px;
+      margin-left: 50%;
+      left: -300px;
+      z-index: 999;
+      margin-top: 50px;
+    }
+    .modalSorteio__body--title{
+      text-align: center;
+      font-size: 20px;
+    }
+    .modalSorteio__body--title span{
+      text-transform: capitalize;
+    }
+    .modalSorteio__body--number{
+      text-align: center;
+      font-size: 35px;
+      font-weight: bolder;
+      letter-spacing: 5px;
+      color: #FF2C0D; 
+    }
+    .modalSorteio__body--obs{
+      text-align: center;
+      font-size: 20px;
+    }
+  </style>
+
+
+
+
   <script type="text/javascript">
     function acesso() {
       let login = document.getElementById('login').value;
@@ -217,13 +275,45 @@ defined('BASEPATH') or exit('No direct script access allowed');
         }
       }
       $.ajax(settings).done(function(response) {
-        console.log(response);
         if (response == '"true"') {
-          var url = "<?php echo base_url('home/logando'); ?>" + "?login=" + login + "&senha=" + senha;
+          var atualUrl = window.location.href;
+          var url = "<?php echo base_url('home/logando'); ?>" + "?login=" + login + "&senha=" + senha + "&url=" + atualUrl;
           window.location.href = url;
         }else{
           alert('usuário não encontrado');
         }
       });
     }
+
+    function requestLogin(){
+      window.scrollTo(0, 0);
+      $('#modalLogin').trigger('click');
+    }
+
+
+
+
+
+    // Modal provisoria sorteio
+    function oepnModalLook(){
+
+      var settings_num = {
+        "async": true,
+        "crossDomain": true,
+        "url": "<?php echo base_url('home/gerarnumero'); ?>",
+        "method": "GET",
+        "headers": {
+          "cache-control": "no-cache",
+        }
+      }
+      $.ajax(settings_num).done(function(response) {
+        $('#numerosorte').html(response);
+      });
+
+      $('#modalSorteio').css('display','block');
+    }
+    function closeModalSorteio(){
+      $('#modalSorteio').css('display','none');
+    }
+
   </script>
