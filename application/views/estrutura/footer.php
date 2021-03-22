@@ -4,7 +4,7 @@
         <div class="widthPadrao">
             <div class="row">
                 <div class="col-md-6 col-sm-12 p0SM">
-                    <div class="footerContact-form">
+                    <div class="footerContact-form" id="contato">
                         <div id="formRodape">
                             <div class="footerContact-form__marg">
                                 <label class="footerContact-form__label">Nome</label>
@@ -32,7 +32,7 @@
                             </div>
 
                             <div class="footerContact-form__marg margCenter">
-                                <button class="footerContact-form__button" onclick="enviarEmailRodape()">Enviar</button>
+                                <button class="footerContact-form__button" onclick="enviarEmailRodape()">Cadastre-se</button>
                             </div>
                         </div>
                         <div class="emailEnviado" id="emailEnviado">
@@ -57,7 +57,7 @@
 
     <!-- Quem Somos -->
     <div class="footerWho">
-        <div class="footerWho__text">
+        <div class="footerWho__text" id="quemSomos">
             <div class="widthPadrao">
                 <div class="row">
                     <div class="col-12">

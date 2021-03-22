@@ -24,9 +24,9 @@
 		border-radius: 17px;
 		outline: none !important;
 		width: 430px;
-		
-		@media (max-width: $screen-sm-max){
-			width: 320px;			
+
+		@media (max-width: $screen-sm-max) {
+			width: 320px;
 		}
 	}
 
@@ -103,7 +103,7 @@
 	}
 
 	&__footer {
-		background: $color-detalhes;
+		background: $color-button;
 		align-items: center;
 		height: 75px;
 		border-top-left-radius: 0px;
@@ -120,6 +120,14 @@
 			font: {
 				weight: bold;
 				size: 20px;
+			}
+		}
+
+		a {
+			color: black;
+
+			&:hover {
+				color: black;
 			}
 		}
 
