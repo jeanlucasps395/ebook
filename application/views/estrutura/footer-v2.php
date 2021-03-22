@@ -4,7 +4,7 @@
         <div class="widthPadrao">
             <div class="row">
                 <div class="col-md-6 col-sm-12 p0SM">
-                    <div class="footerContact-form">
+                    <div class="footerContact-form" id="contato">
                         <div id="formRodape">
                             <div class="footerContact-form__marg">
                                 <label class="footerContact-form__label">Nome</label>
