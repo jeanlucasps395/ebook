@@ -82,7 +82,7 @@
                         </div>
                         <div class="eb-season-slick__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -111,7 +111,7 @@
                         </div>
                         <div class="eb-season-slick__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -140,7 +140,7 @@
                         </div>
                         <div class="eb-season-slick__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="eb-season-slick__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -210,7 +210,7 @@
                         </div>
                         <div class="eb-season-search__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -239,7 +239,7 @@
                         </div>
                         <div class="eb-season-search__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -268,7 +268,7 @@
                         </div>
                         <div class="eb-season-search__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
@@ -297,7 +297,7 @@
                         </div>
                         <div class="eb-season-search__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="#">Ver um pouco mais</a></h6>
+                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>

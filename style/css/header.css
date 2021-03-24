@@ -28,11 +28,17 @@
 	color: #fff !important;
 }
 
-.header-block_toogle {
-	text-align: right;
-	float: right;
-	color: #fff !important;
-	border: none !important;
+
+.nav-item .color-green{
+  color: #0DFF90 !important;
+  text-transform: capitalize;
+}
+
+.header-block_toogle{
+    text-align: right;
+    float: right;
+    color: #fff !important;
+    border: none !important;
 }
 
 input[type="text"] {

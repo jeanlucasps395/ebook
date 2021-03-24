@@ -3,10 +3,11 @@
         <div class="row">
             <div class="eb-season-one d-md-flex d-block">
                 <div class="eb-season-one__img col-12 col-md-6">
-                    <img src="https://via.placeholder.com/485x642/243e66">
+                    <img src="<?= base_url(); ?>/style/img/bg-curso.png">
+                    <!-- <img src="https://via.placeholder.com/485x642/243e66"> -->
                     <div class="eb-season-one__img--text">
-                        <h3>Engenharia da computação</h3>
-                        <button>Ler agora</button>
+                        <h3>Cursos e sorteios</h3>
+                        <a href="<?= base_url('home/search'); ?>"><button>Ler agora</button></a>
                     </div>
                     <h6>Sorteio ou E-book destaque</h6>
                 </div>
@@ -16,7 +17,7 @@
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, seb do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim vem"</p>
                     </div>
-                    <button class="btn-principal">Ler agora</button>
+                    <a href="<?= base_url('home/search'); ?>"><button class="btn-principal">E-books</button></a>
                     <div class="eb-season-one__text--input">
                         <p>O que você gostaria de ler hoje?</p>
                         <input type="text" name="" id="" placeholder="Marketin Digital"><span><i class="fas fa-search"></i></span>
