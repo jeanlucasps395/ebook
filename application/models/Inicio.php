@@ -14,5 +14,18 @@ class inicio extends CI_Model {
 		$dados = $this->db->get_where('eb_usuario',array('email' => $login, 'senha' => sha1($senha), 'ativo' => 1 ))->row_array();
 		return $dados;
 	}
-  
+
+	function buscar_curso_destaque(){
+		$dados = $this->db->query('SELECT * FROM eb_curso WHERE ativo = 1 and destaque = 1 ')->result_array();
+		return $dados;
+	}
+  	
+  	function cursos_search_pag(){
+  		$dados = $this->db->query('SELECT * FROM eb_curso WHERE ativo = 1 order by id_curso desc  limit 0,6')->result_array();
+		return $dados;
+  	}
+  	function buscar_curso_pg($id){
+  		$dados = $this->db->query('SELECT * FROM eb_curso WHERE ativo = 1 and id_curso = '.$id.'')->row_array();
+		return $dados;	
+  	}
 }

@@ -42,6 +42,7 @@ create table eb_curso(
 	postador varchar(10),
 	sorteio varchar(80),
 	n_sorteio varchar(20),
+	destaque boolean,
 	ativo boolean
 );
 

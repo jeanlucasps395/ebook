@@ -17,8 +17,9 @@
 
 
         function index(){
+            $dados['cursos_destaque'] = $this->inicio->buscar_curso_destaque();
             $this->load->view('estrutura/header');
-            $this->load->view('home');
+            $this->load->view('home',$dados);
             $this->load->view('estrutura/footer');
         }
 
@@ -109,19 +110,31 @@
         // Area logada
         function areaLogada(){
             $this->validate_session();
-            $this->load->view('estrutura/header');
-            $this->load->view('search');
-            $this->load->view('estrutura/footer-v2');
+            header("location: ".base_url('home/index'));
+            // $dados['cursos_destaque'] = $this->inicio->buscar_curso_destaque();
+            // $this->load->view('estrutura/header');
+            // $this->load->view('search',$dados);
+            // $this->load->view('estrutura/footer-v2');
         }
 
         function pgCursos(){
+            $dados = [];
+            if($this->input->get('id') != null ){
+                $id = $this->input->get('id');
+                $dados['curso'] = $this->inicio->buscar_curso_pg($id);
+            }
+            else{
+                header("location: ".base_url('home/search'));
+            }
             $this->load->view('estrutura/header');
-            $this->load->view('pgCursos');
+            $this->load->view('pgCursos',$dados);
             $this->load->view('estrutura/footer-v2');
         }
         function search(){
+            $dados['cursos_destaque'] = $this->inicio->buscar_curso_destaque();
+            $dados['cursos_search_pag'] = $this->inicio->cursos_search_pag();
             $this->load->view('estrutura/header');
-            $this->load->view('search');
+            $this->load->view('search',$dados);
             $this->load->view('estrutura/footer-v2');
         }
 
@@ -142,5 +155,14 @@
 
             echo json_encode($ch);
         } 
+
+
+        // Checkout - pagamento
+        function checkout(){
+            $this->load->view('estrutura/header');
+            echo 'Ainda criar tela';
+            $this->load->view('estrutura/footer-v2');
+        }
+
 
     }

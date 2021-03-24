@@ -58,124 +58,46 @@
                     <h1>E-books em destaque</h1>
                 </div>
 
-                <!-- Slick jobson -->
+                 <!-- Slick jobson -->
                 <ul class="eb-season-slick">
+
+                    <?php foreach($cursos_destaque as $cursos){ ?> 
                     <li class="eb-season-slick__block">
                         <div class="eb-season-slick__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
+                            <!-- <img src="https://via.placeholder.com/50/243e66" alt=""> -->
+                            <div style="background: url(<?php echo base_url('upload/cursos/curso_').$cursos['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover;width: 50px;height: 50px;border-radius: 50%; margin-right: 20px;"></div>
+                            <span><?= $cursos['titulo']; ?></span>
                         </div>
                         <div class="eb-season-slick__avaliation">
                             <ul class="d-flex">
                                 <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
+                                <?php for($cont = 0; $cont < $cursos['avaliacao'] ; $cont++){ ?>
+                                    <li><i class="yellow fas fa-star"></i></li>    
+                                <?php } ?>
+                                <!-- <li><i class="yellow-v2 fas fa-star"></i></li> -->
                             </ul>
                         </div>
                         <div class="eb-season-slick__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
+                            <p>Sorteio: <span><?= $cursos['sorteio']; ?></span></p>
                         </div>
-                        <div class="eb-season-slick__background">
-                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
+                        <div class="eb-season-slick__background" 
+                             style="background: url(<?php echo base_url('upload/cursos/curso_').$cursos['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover; ">
+                            <p class="eb-season-slick__background--text"> 
+                                <a href="<?php echo base_url('home/pgCursos?id=').$cursos['id_curso']; ?>">Ler agora mesmo</a>
+                            </p>
                         </div>
                         <div class="eb-season-slick__footer d-flex">
                             <div class="col-10">
-                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
+                                <h6><a href="<?php echo base_url('home/pgCursos?id=').$cursos['id_curso']; ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
                             </div>
                         </div>
                     </li>
-                    <li class="eb-season-slick__block">
-                        <div class="eb-season-slick__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
-                        </div>
-                        <div class="eb-season-slick__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="eb-season-slick__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
-                        </div>
-                        <div class="eb-season-slick__background">
-                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
-                        </div>
-                        <div class="eb-season-slick__footer d-flex">
-                            <div class="col-10">
-                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="eb-season-slick__block">
-                        <div class="eb-season-slick__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
-                        </div>
-                        <div class="eb-season-slick__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="eb-season-slick__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
-                        </div>
-                        <div class="eb-season-slick__background">
-                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
-                        </div>
-                        <div class="eb-season-slick__footer d-flex">
-                            <div class="col-10">
-                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="eb-season-slick__block">
-                        <div class="eb-season-slick__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
-                        </div>
-                        <div class="eb-season-slick__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="eb-season-slick__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
-                        </div>
-                        <div class="eb-season-slick__background">
-                            <p class="eb-season-slick__background--text"> <a href="#">Ler agora mesmo</a></p>
-                        </div>
-                        <div class="eb-season-slick__footer d-flex">
-                            <div class="col-10">
-                                <h6><a href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </div>
-                    </li>
+
+                    <?php } ?>
+
 
                 </ul>
                 <!-- Slick jobson -->
@@ -188,122 +110,41 @@
 
                 <!-- Slick jobson -->
                 <ul class="eb-season-search">
+
+                    <?php foreach($cursos_search_pag as $cursos_outros){ ?> 
                     <li class="eb-season-search__block">
                         <div class="eb-season-search__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
+                            <div style="background: url(<?php echo base_url('upload/cursos/curso_').$cursos_outros['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover;width: 50px;height: 50px;border-radius: 50%; margin-right: 20px;"></div>
+                            <span><?= $cursos_outros['titulo']; ?></span>
                         </div>
                         <div class="eb-season-search__avaliation">
                             <ul class="d-flex">
                                 <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
+                                <?php for($cont = 0; $cont < $cursos_outros['avaliacao'] ; $cont++){ ?>
+                                    <li><i class="yellow fas fa-star"></i></li>    
+                                <?php } ?>
                             </ul>
                         </div>
                         <div class="eb-season-search__prizeDraw">
                             <p>Sorteio: <span>Moto</span></p>
                         </div>
-                        <div class="eb-season-search__background">
-                            <p class="eb-season-search__background--text"> <a href="#">Ler agora mesmo</a></p>
+                        <div class="eb-season-slick__background" 
+                        style="background: url(<?php echo base_url('upload/cursos/curso_').$cursos_outros['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover; ">
+                            <p class="eb-season-search__background--text"> 
+                                <a href="<?php echo base_url('home/pgCursos?id=').$cursos_outros['id_curso']; ?>">Ler agora mesmo</a>
+                            </p>
                         </div>
                         <div class="eb-season-search__footer d-flex">
                             <div class="col-10">
-                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
+                                <h6><a href="<?php echo base_url('home/pgCursos?id=').$cursos_outros['id_curso']; ?>">Ver um pouco mais</a></h6>
                             </div>
                             <div class="col-2">
                                 <i class="fas fa-long-arrow-alt-right"></i>
                             </div>
                         </div>
                     </li>
-                    <li class="eb-season-search__block">
-                        <div class="eb-season-search__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
-                        </div>
-                        <div class="eb-season-search__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="eb-season-search__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
-                        </div>
-                        <div class="eb-season-search__background">
-                            <p class="eb-season-search__background--text"> <a href="#">Ler agora mesmo</a></p>
-                        </div>
-                        <div class="eb-season-search__footer d-flex">
-                            <div class="col-10">
-                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="eb-season-search__block">
-                        <div class="eb-season-search__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
-                        </div>
-                        <div class="eb-season-search__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="eb-season-search__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
-                        </div>
-                        <div class="eb-season-search__background">
-                            <p class="eb-season-search__background--text"> <a href="#">Ler agora mesmo</a></p>
-                        </div>
-                        <div class="eb-season-search__footer d-flex">
-                            <div class="col-10">
-                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="eb-season-search__block">
-                        <div class="eb-season-search__img">
-                            <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
-                        </div>
-                        <div class="eb-season-search__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow fas fa-star"></i></li>
-                                <li><i class="yellow-v2 fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="eb-season-search__prizeDraw">
-                            <p>Sorteio: <span>Moto</span></p>
-                        </div>
-                        <div class="eb-season-search__background">
-                            <p class="eb-season-search__background--text"> <a href="#">Ler agora mesmo</a></p>
-                        </div>
-                        <div class="eb-season-search__footer d-flex">
-                            <div class="col-10">
-                                <h6><a  href="<?= base_url('home/pgCursos'); ?>">Ver um pouco mais</a></h6>
-                            </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </div>
-                        </div>
-                    </li>
+
+                    <?php } ?>
 
                 </ul>
                 <!-- Slick jobson -->

@@ -1,4 +1,6 @@
 <footer id="Contatos">
+    
+    <?php if(!$this->session->userdata('email') != null){ ?> 
     <!-- Formulario  -->
     <div class="footerContact">
         <div class="widthPadrao">
@@ -54,6 +56,7 @@
         </div>
     </div>
     <!-- Formulario  -->
+    <?php } ?>
 
     <div class="footer-social-media V2">
         <i class="fab fa-instagram"></i>
