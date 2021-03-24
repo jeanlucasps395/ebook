@@ -20,7 +20,7 @@
 		text-align: left;
 		font-weight: bold;
 		font-size: 15px;
-		margin-top: 10px;		
+		margin-top: 10px;
 
 		@media (min-width: $screen-lg-min) {
 			margin-top: 19px;
@@ -100,9 +100,76 @@
 		}
 	}
 
-	.pgCursos & ,
+	.eb-season-one__seach {
+		position: absolute;
+		top: 100%;
+		bottom: 0;
+		left: 29%;
+		right: auto;
+		max-width: 552px;
+		width: 100%;
+		z-index: 9999;
+		display: none;
+
+		@media (max-width: $screen-md-max){
+			left: 0;
+		}
+
+		.home & {
+			top: 543px;
+			left: 0;
+
+			@media (max-width: $screen-md-max){
+				top: 100%;
+			}
+		}
+
+		> ul {
+			border: 1px solid #cacaca;
+			background-color: white;
+			list-style: none;
+			padding: 0;
+
+			> li {
+				border-bottom: 1px solid #cacaca;
+				cursor: pointer;
+				padding: 19px;
+				position: relative;
+
+				&::before {
+					content: "\f30b";
+					font-family: "Font Awesome 5 Pro";
+					position: absolute;
+					right: 29px;
+					font-size: 36px;
+					color: $color-principal;
+				}
+
+				&:hover {
+					background: rgb(241, 241, 241);
+				}
+
+				&:last-child {
+					border-bottom: 0;
+				}
+
+				h1 {
+					font-size: 20px;
+					font-weight: bold;
+				}
+
+				.eb-season-slick__avaliation {
+					padding: 0;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.pgCursos &,
 	.search & {
 		margin-bottom: 88px;
+		position: relative;
 
 		.eb-season-one__text--input {
 			width: 100%;

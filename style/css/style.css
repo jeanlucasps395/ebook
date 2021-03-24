@@ -114,8 +114,68 @@
 .eb-season-one__text--input i {
   color: #0DFF90;
 }
+.eb-season-one .eb-season-one__seach {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 29%;
+  right: auto;
+  max-width: 552px;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+@media (max-width: 1199px) {
+  .eb-season-one .eb-season-one__seach {
+    left: 0;
+  }
+}
+.home .eb-season-one .eb-season-one__seach {
+  top: 543px;
+  left: 0;
+}
+@media (max-width: 1199px) {
+  .home .eb-season-one .eb-season-one__seach {
+    top: 100%;
+  }
+}
+.eb-season-one .eb-season-one__seach > ul {
+  border: 1px solid #cacaca;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+}
+.eb-season-one .eb-season-one__seach > ul > li {
+  border-bottom: 1px solid #cacaca;
+  cursor: pointer;
+  padding: 19px;
+  position: relative;
+}
+.eb-season-one .eb-season-one__seach > ul > li::before {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  right: 29px;
+  font-size: 36px;
+  color: #0DFF90;
+}
+.eb-season-one .eb-season-one__seach > ul > li:hover {
+  background: #f1f1f1;
+}
+.eb-season-one .eb-season-one__seach > ul > li:last-child {
+  border-bottom: 0;
+}
+.eb-season-one .eb-season-one__seach > ul > li h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.eb-season-one .eb-season-one__seach > ul > li .eb-season-slick__avaliation {
+  padding: 0;
+  font-size: 16px;
+}
 .pgCursos .eb-season-one, .search .eb-season-one {
   margin-bottom: 88px;
+  position: relative;
 }
 .pgCursos .eb-season-one .eb-season-one__text--input, .search .eb-season-one .eb-season-one__text--input {
   width: 100%;

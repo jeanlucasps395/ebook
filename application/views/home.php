@@ -1,4 +1,4 @@
-<section>
+<section class="home">
     <div class="container">
         <div class="row">
             <div class="eb-season-one d-md-flex d-block">
@@ -21,6 +21,49 @@
                     <div class="eb-season-one__text--input">
                         <p>O que você gostaria de ler hoje?</p>
                         <input type="text" name="" id="" placeholder="Marketin Digital"><span><i class="fas fa-search"></i></span>
+                    </div>
+                    <div class="eb-season-one__seach">
+                        <ul>
+                            <li>
+                                <h1>Engenharia da computação</h1>
+                                <div class="eb-season-slick__avaliation">
+                                    <ul class="d-flex">
+                                        <span><strong>Nota: </strong></span>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow-v2 fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>Engenharia da computação</h1>
+                                <div class="eb-season-slick__avaliation">
+                                    <ul class="d-flex">
+                                        <span><strong>Nota: </strong></span>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow-v2 fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>Engenharia da computação</h1>
+                                <div class="eb-season-slick__avaliation">
+                                    <ul class="d-flex">
+                                        <span><strong>Nota: </strong></span>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                        <li><i class="yellow-v2 fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -49,8 +92,8 @@
                 </div>
 
                 <!-- Slick jobson -->
-                <ul class="eb-season-slick">                    
-                    <li class="eb-season-slick__block"> 
+                <ul class="eb-season-slick">
+                    <li class="eb-season-slick__block">
                         <div class="eb-season-slick__img">
                             <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
                         </div>
@@ -79,7 +122,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="eb-season-slick__block"> 
+                    <li class="eb-season-slick__block">
                         <div class="eb-season-slick__img">
                             <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
                         </div>
@@ -108,7 +151,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="eb-season-slick__block"> 
+                    <li class="eb-season-slick__block">
                         <div class="eb-season-slick__img">
                             <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
                         </div>
@@ -137,7 +180,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="eb-season-slick__block"> 
+                    <li class="eb-season-slick__block">
                         <div class="eb-season-slick__img">
                             <img src="https://via.placeholder.com/50/243e66" alt=""><span>Engenharia da computação</span>
                         </div>
@@ -166,7 +209,7 @@
                             </div>
                         </div>
                     </li>
-                   
+
                 </ul>
                 <!-- Slick jobson -->
             </div>

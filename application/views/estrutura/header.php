@@ -35,6 +35,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <!-- SLICK -->
   <!-- <link rel="stylesheet" type="text/css" href="<?= base_url('style/scss/') ?>slick.scss" /> -->
   <script type="text/javascript" src="<?= base_url('style/js/') ?>slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.10.1/css/pro.min.css">
 
