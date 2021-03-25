@@ -29,6 +29,17 @@
 	}
 
 	&__img {
+		&-block {
+			width: 100%;
+			height: 380px;			
+			filter: brightness(0.4);
+			
+			@media (min-width: $screen-lg-min) {
+				height: 642px;			
+				max-width: 485px;				
+				margin-right: 20px;
+			}
+		}
 		img {
 			width: 100%;
 
@@ -111,7 +122,7 @@
 		z-index: 9999;
 		display: none;
 
-		@media (max-width: $screen-md-max){
+		@media (max-width: $screen-md-max) {
 			left: 0;
 		}
 
@@ -119,7 +130,7 @@
 			top: 543px;
 			left: 0;
 
-			@media (max-width: $screen-md-max){
+			@media (max-width: $screen-md-max) {
 				top: 100%;
 			}
 		}
@@ -247,5 +258,6 @@
 }
 
 div#season {
+	width: 100%;
 	margin-top: 37px;
 }

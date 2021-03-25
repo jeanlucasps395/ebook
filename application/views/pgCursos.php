@@ -75,8 +75,7 @@
                     <div class="eb-season-one__img col-12 col-md-6">
                         <!-- <img src="https://via.placeholder.com/485x642/243e66"> -->
                         <!-- <img src="<?= base_url(); ?>/style/img/bg-curso.png"> -->
-                        <div style="background: url(<?php echo base_url('upload/cursos/curso_').$curso['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover;
-                              width: 485px;height: 642px; margin-right: 20px;"></div>
+                        <div class="eb-season-one__img-block" style="background: url(<?php echo base_url('upload/cursos/curso_') . $curso['id_curso'] . '/capa.png'; ?>) center center no-repeat;background-size: cover;"></div>
                         <div class="eb-season-one__img--text">
                             <h3><?= $curso['titulo']; ?></h3>
                             <!-- <button>Ler agora</button> -->
@@ -90,8 +89,8 @@
                             <div class="eb-season-slick__avaliation">
                                 <ul class="d-flex">
                                     <span><strong>Nota: </strong></span>
-                                    <?php for($cont = 0; $cont < $curso['avaliacao'] ; $cont++){ ?>
-                                     <li><i class="yellow fas fa-star"></i></li>    
+                                    <?php for ($cont = 0; $cont < $curso['avaliacao']; $cont++) { ?>
+                                        <li><i class="yellow fas fa-star"></i></li>
                                     <?php } ?>
                                 </ul>
                             </div>
@@ -105,11 +104,11 @@
 
                         <div class="eb-season-price">
                             <h1><strong>Preço: R$ <?= $curso['valor']; ?>,<span>00</span></strong></h1>
-                            <?php if($this->session->userdata('email') != null){?>
+                            <?php if ($this->session->userdata('email') != null) { ?>
                                 <!-- go to checkout, but open de modal now -->
                                 <!-- <button class="btn-principal" onclick="oepnModalLook()">Comprar</button> -->
                                 <a href="<?= base_url(); ?>home/checkout?id=<?= $curso['id_curso']; ?>"><button class="btn-principal" type="button">Comprar</button></a>
-                            <?php }else{ ?>
+                            <?php } else { ?>
                                 <button class="btn-principal" onclick="requestLogin()">Comprar</button>
                             <?php } ?>
                         </div>
