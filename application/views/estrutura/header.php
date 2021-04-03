@@ -98,12 +98,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
           <a class="nav-link atAnc" href="#quemSomos">Quem Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link atAnc" href="#">Meus E-books</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="<?= base_url('home/search'); ?>">E-books</a>
         </li>
         <?php if ($this->session->userdata('email') != null) { ?>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('home/myEbooks'); ?>">Meus E-books</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
           </li>
@@ -153,13 +153,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
               <a class="nav-link" href="#quemSomos">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link atAnc" href="#">Meus E-books</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="<?= base_url('home/search'); ?>">E-books</a>
             </li>
 
             <?php if ($this->session->userdata('email') != null) { ?>
+              <li class="nav-item">
+                <a class="nav-link"  href="<?= base_url('home/myEbooks'); ?>">Meus E-books</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
               </li>

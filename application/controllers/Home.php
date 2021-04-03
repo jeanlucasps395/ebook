@@ -29,7 +29,7 @@ class Home extends CI_Controller
     {
         $login = $this->input->post('login');
         $senha = $this->input->post('senha');
-        echo json_encode($this->logar($login, $senha));
+        echo json_encode($this->logar($login, $senha)); 
     }
 
     function logar($login, $senha)
@@ -181,4 +181,9 @@ class Home extends CI_Controller
         $this->load->view('myEbooks');
         $this->load->view('estrutura/footer-v2');
     }
+
+    function buscarCursos(){
+        echo json_encode($this->inicio->searchCurso($this->input->post('search'))); 
+    }
+
 }

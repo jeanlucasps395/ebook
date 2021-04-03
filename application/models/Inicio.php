@@ -28,4 +28,10 @@ class inicio extends CI_Model {
   		$dados = $this->db->query('SELECT * FROM eb_curso WHERE ativo = 1 and id_curso = '.$id.'')->row_array();
 		return $dados;	
   	}
+  	function searchCurso($search){
+  		$dados = $this->db->query("SELECT * FROM eb_curso WHERE ativo = 1 and titulo like '%".$search."%' ")->result_array();
+  		// echo $this->db->last_query();
+  		// die();
+		return $dados;		
+  	}
 }

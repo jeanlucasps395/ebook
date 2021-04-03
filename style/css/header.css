@@ -158,3 +158,39 @@ li.nav-item {
 .block {
 	overflow: hidden;
 }
+
+
+
+#FieldsSearchsContent ::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 20px;
+}
+
+/* Track */
+#FieldsSearchsContent ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#FieldsSearchsContent ::-webkit-scrollbar-thumb {
+  background: #0DFF90;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+#FieldsSearchsContent ::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+#FieldsSearchsContent{
+	display: none;
+}
+
+.eb-season-one .eb-season-one__seach{
+	height: 150px;
+	
+}
+.eb-season-one__seach{
+	overflow-y: scroll !important;
+	display: block !important;
+}
