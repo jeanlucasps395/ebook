@@ -51,7 +51,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
       /*border: 0px solid #041239;*/
       outline: 0px;
     }
-
   </style>
 
   <script type="text/javascript">
@@ -98,16 +97,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <li class="nav-item">
           <a class="nav-link atAnc" href="#quemSomos">Quem Somos</a>
         </li>
-        <?php if($this->session->userdata('email') != null){ ?> 
+        <li class="nav-item">
+          <a class="nav-link atAnc" href="#">Meus E-books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url('home/search'); ?>">E-books</a>
+        </li>
+        <?php if ($this->session->userdata('email') != null) { ?>
           <li class="nav-item">
             <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('home/sair'); ?>">Sair</a>
+            <a class="nav-link" href="<?= base_url('home/sair'); ?>">Sair</a>
           </li>
         <?php } else { ?>
           <li class="nav-item">
-              <a class="nav-link" id="modalLogin" href="#">Entrar</a>
+            <a class="nav-link" id="modalLogin" href="#">Entrar</a>
           </li>
         <?php } ?>
 
@@ -147,18 +152,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <li class="nav-item">
               <a class="nav-link" href="#quemSomos">Quem somos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link atAnc" href="#">Meus E-books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?= base_url('home/search'); ?>">E-books</a>
+            </li>
 
-            <?php if($this->session->userdata('email') != null){ ?> 
+            <?php if ($this->session->userdata('email') != null) { ?>
               <li class="nav-item">
                 <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="<?= base_url('home/sair'); ?>">Sair</a>
+                <a class="nav-link" href="<?= base_url('home/sair'); ?>">Sair</a>
               </li>
             <?php } else { ?>
-            <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" id="modalLogin" href="#">Entrar</a>
-            </li>
+              </li>
             <?php } ?>
 
           </ul>
@@ -204,17 +215,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <div id="modalSorteio">
     <div class="modalSorteio__background" onclick="closeModalSorteio()"></div>
     <div class="modalSorteio__body">
-        <p class="modalSorteio__body--title">Parabéns pela compra <span><?= $this->session->userdata('nome'); ?></span>, seu número é:</p>
-        <p class="modalSorteio__body--number" id="numerosorte">00000</p>
-        <p class="modalSorteio__body--obs">O seu número de sorteio é único, estamos te enviando por email também, guarde-o com seguranaça.</p>
+      <p class="modalSorteio__body--title">Parabéns pela compra <span><?= $this->session->userdata('nome'); ?></span>, seu número é:</p>
+      <p class="modalSorteio__body--number" id="numerosorte">00000</p>
+      <p class="modalSorteio__body--obs">O seu número de sorteio é único, estamos te enviando por email também, guarde-o com seguranaça.</p>
     </div>
   </div>
 
   <style type="text/css">
-    #modalSorteio{
+    #modalSorteio {
       display: none;
     }
-    .modalSorteio__background{
+
+    .modalSorteio__background {
       position: fixed;
       background: #000;
       opacity: .40;
@@ -223,11 +235,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
       z-index: 99;
       margin-top: -150px;
     }
-    .modalSorteio__body{
+
+    .modalSorteio__body {
       position: fixed;
       background: #fff;
       border-radius: 20px;
-      box-shadow: 0 0 4px rgb(0,0,0,0.2);
+      box-shadow: 0 0 4px rgb(0, 0, 0, 0.2);
       padding: 45px 20px 30px 20px;
       width: 600px;
       margin-left: 50%;
@@ -235,21 +248,25 @@ defined('BASEPATH') or exit('No direct script access allowed');
       z-index: 999;
       margin-top: 50px;
     }
-    .modalSorteio__body--title{
+
+    .modalSorteio__body--title {
       text-align: center;
       font-size: 20px;
     }
-    .modalSorteio__body--title span{
+
+    .modalSorteio__body--title span {
       text-transform: capitalize;
     }
-    .modalSorteio__body--number{
+
+    .modalSorteio__body--number {
       text-align: center;
       font-size: 35px;
       font-weight: bolder;
       letter-spacing: 5px;
-      color: #FF2C0D; 
+      color: #FF2C0D;
     }
-    .modalSorteio__body--obs{
+
+    .modalSorteio__body--obs {
       text-align: center;
       font-size: 20px;
     }
@@ -280,13 +297,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
           var atualUrl = window.location.href;
           var url = "<?php echo base_url('home/logando'); ?>" + "?login=" + login + "&senha=" + senha + "&url=" + atualUrl;
           window.location.href = url;
-        }else{
+        } else {
           alert('usuário não encontrado');
         }
       });
     }
 
-    function requestLogin(){
+    function requestLogin() {
       window.scrollTo(0, 0);
       $('#modalLogin').trigger('click');
     }
@@ -296,7 +313,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
     // Modal provisoria sorteio
-    function oepnModalLook(){
+    function oepnModalLook() {
 
       var settings_num = {
         "async": true,
@@ -311,10 +328,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
         $('#numerosorte').html(response);
       });
 
-      $('#modalSorteio').css('display','block');
-    }
-    function closeModalSorteio(){
-      $('#modalSorteio').css('display','none');
+      $('#modalSorteio').css('display', 'block');
     }
 
+    function closeModalSorteio() {
+      $('#modalSorteio').css('display', 'none');
+    }
   </script>
