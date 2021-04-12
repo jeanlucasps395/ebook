@@ -126,10 +126,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <nav class="navbar navbar-expand-md navbar-dark header-block">
 
       <div class="col-xl-7 col-lg-5 col-md-4 col-sm-6 col-6">
-        <a class="navbar-brand" href="<?= base_url('home/index'); ?>">
-          <!-- <img src="<?= base_url('style/img/logo.png'); ?>" class="header-block__logo"> -->
-          logo
-        </a>
+        <!-- <a class="navbar-brand" href="<?= base_url('home/index'); ?>"> -->
+          <img src="<?= base_url('style/img/logo-text.png'); ?>" class="header-block__logo" style="width: 125px;">
+        
       </div>
 
       <div class="col-xl-5 col-lg-7 col-md-8 col-sm-6 col-6 p0">

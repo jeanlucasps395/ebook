@@ -1,6 +1,6 @@
 <?php
-
-// include_once APPPATH.'/third_party/pag/PagSeguroAssinaturas.php';
+// include_once('../sdkpagseguro/PagSeguroLibrary');
+include_once APPPATH.'/sdkpagseguro/PagSeguroLibrary/PagSeguroLibrary.php';
 // use CWG\PagSeguro\PagSeguroAssinaturas;
 
 class Home extends CI_Controller
@@ -170,9 +170,38 @@ class Home extends CI_Controller
     // Checkout - pagamento
     function checkout()
     {
-        $this->load->view('estrutura/header');
-        echo 'Ainda criar tela';
-        $this->load->view('estrutura/footer-v2');
+
+
+        $paymentRequest = new PagSeguroPaymentRequest();  
+        $paymentRequest->addItem('0001', 'Ebook - Engenharia da computação',  1, 10.00); 
+        $paymentRequest->setCurrency("BRL");  
+
+        // Referenciando a transação do PagSeguro em seu sistema  
+        $paymentRequest->setReference("REF123");  
+        
+        // URL para onde o comprador será redirecionado (GET) após o fluxo de pagamento  
+        $paymentRequest->setRedirectUrl("http://www.lojamodelo.com.br");  
+        
+        // URL para onde serão enviadas notificações (POST) indicando alterações no status da transação  
+        $paymentRequest->addParameter('notificationURL', 'http://www.lojamodelo.com.br/nas'); 
+        
+        try {  
+
+            $credentials = PagSeguroConfig::getAccountCredentials(); // getApplicationCredentials()  
+            $checkoutUrl = $paymentRequest->register($credentials); 
+            
+            // echo "<a href='{$checkoutUrl}'>Pagar agora!</a>";
+            header("location: " . $checkoutUrl);
+            
+            } catch (PagSeguroServiceException $e) {  
+                die($e->getMessage());  
+            }  
+
+
+
+        // $this->load->view('estrutura/header');
+        // $this->load->view('checkout');
+        // $this->load->view('estrutura/footer-v2');
     }
 
     function myEbooks()
