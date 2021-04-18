@@ -6,7 +6,7 @@
                     <img src="<?= base_url(); ?>/style/img/bg-curso.png">
                     <!-- <img src="https://via.placeholder.com/485x642/243e66"> -->
                     <div class="eb-season-one__img--text">
-                        <h3>Cursos e sorteios</h3>
+                        <h3>Promoções Comerciais em Andamento e sorteios</h3>
                         <a href="<?= base_url('home/search'); ?>"><button>Ler agora</button></a>
                     </div>
                     <h6>Sorteio ou E-book destaque</h6>

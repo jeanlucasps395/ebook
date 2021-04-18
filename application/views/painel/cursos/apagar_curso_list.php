@@ -35,7 +35,7 @@
 
 <div class="widhtPadrao">	
 	<div class="bg-painel">
-		<h1>Apagar Cursos</h1>
+		<h1>Apagar Promoções Comerciais em Andamento</h1>
 	</div>
 	<div class="blocoDashboard">
 		<div class="listOptions">
