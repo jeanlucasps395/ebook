@@ -17,7 +17,7 @@
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, seb do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim vem"</p>
                     </div>
-                    <a href="<?= base_url('home/search'); ?>"><button class="btn-principal">E-books</button></a>
+                    <a href="<?= base_url('home/search'); ?>"><button class="btn-principal">Promoção Comercial</button></a>
                     <div class="eb-season-one__text--input">
                         <p>O que você gostaria de ler hoje?</p>
                         <input type="text" name="" id="" placeholder="Marketin Digital"><span><i class="fas fa-search"></i></span>
@@ -88,7 +88,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="eb-season-emphasis">
-                    <h1>E-books em destaque</h1>
+                    <h1>Promoções Comerciais em Andamento</h1>
                 </div>
 
                 <!-- Slick jobson -->
@@ -145,7 +145,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>O que nossos clientes pensam?</h1>
+                    <h1>O que nossos parceiros pensam?</h1>
                     <ul class="d-md-flex d-block">
                         <li class="eb-season-think__block">
                             <div class="eb-season-think__img">
