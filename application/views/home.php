@@ -94,41 +94,40 @@
                 <!-- Slick jobson -->
                 <ul class="eb-season-slick">
 
-                    <?php foreach($cursos_destaque as $cursos){ ?> 
-                    <li class="eb-season-slick__block">
-                        <div class="eb-season-slick__img">
-                            <!-- <img src="https://via.placeholder.com/50/243e66" alt=""> -->
-                            <div style="background: url(<?php echo base_url('upload/cursos/curso_').$cursos['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover;width: 50px;height: 50px;border-radius: 50%; margin-right: 20px;"></div>
-                            <span><?= $cursos['titulo']; ?></span>
-                        </div>
-                        <div class="eb-season-slick__avaliation">
-                            <ul class="d-flex">
-                                <span>Nota: </span>
-                                <?php for($cont = 0; $cont < $cursos['avaliacao'] ; $cont++){ ?>
-                                    <li><i class="yellow fas fa-star"></i></li>    
-                                <?php } ?>
-            
-                                <!-- <li><i class="yellow-v2 fas fa-star"></i></li> -->
-                            </ul>
-                        </div>
-                        <div class="eb-season-slick__prizeDraw">
-                            <p>Sorteio: <span><?= $cursos['sorteio']; ?></span></p>
-                        </div>
-                        <div class="eb-season-slick__background" 
-                             style="background: url(<?php echo base_url('upload/cursos/curso_').$cursos['id_curso'].'/capa.png'; ?>) center center no-repeat;background-size: cover; ">
-                            <p class="eb-season-slick__background--text"> 
-                                <a href="<?php echo base_url('home/pgCursos?id=').$cursos['id_curso']; ?>">Ler agora mesmo</a>
-                            </p>
-                        </div>
-                        <div class="eb-season-slick__footer d-flex">
-                            <div class="col-10">
-                                <h6><a href="<?php echo base_url('home/pgCursos?id=').$cursos['id_curso']; ?>">Ver um pouco mais</a></h6>
+                    <?php foreach ($cursos_destaque as $cursos) { ?>
+                        <li class="eb-season-slick__block">
+                            <div class="eb-season-slick__img">
+                                <!-- <img src="https://via.placeholder.com/50/243e66" alt=""> -->
+                                <div style="background: url(<?php echo base_url('upload/cursos/curso_') . $cursos['id_curso'] . '/capa.png'; ?>) center center no-repeat;background-size: cover;width: 50px;height: 50px;border-radius: 50%; margin-right: 20px;"></div>
+                                <span><?= $cursos['titulo']; ?></span>
                             </div>
-                            <div class="col-2">
-                                <i class="fas fa-long-arrow-alt-right"></i>
+                            <div class="eb-season-slick__avaliation">
+                                <ul class="d-flex">
+                                    <span>Nota: </span>
+                                    <?php for ($cont = 0; $cont < $cursos['avaliacao']; $cont++) { ?>
+                                        <li><i class="yellow fas fa-star"></i></li>
+                                    <?php } ?>
+
+                                    <!-- <li><i class="yellow-v2 fas fa-star"></i></li> -->
+                                </ul>
                             </div>
-                        </div>
-                    </li>
+                            <div class="eb-season-slick__prizeDraw">
+                                <p>Sorteio: <span><?= $cursos['sorteio']; ?></span></p>
+                            </div>
+                            <div class="eb-season-slick__background" style="background: url(<?php echo base_url('upload/cursos/curso_') . $cursos['id_curso'] . '/capa.png'; ?>) center center no-repeat;background-size: cover; ">
+                                <p class="eb-season-slick__background--text">
+                                    <a href="<?php echo base_url('home/pgCursos?id=') . $cursos['id_curso']; ?>">Ler agora mesmo</a>
+                                </p>
+                            </div>
+                            <div class="eb-season-slick__footer d-flex">
+                                <div class="col-10">
+                                    <h6><a href="<?php echo base_url('home/pgCursos?id=') . $cursos['id_curso']; ?>">Ver um pouco mais</a></h6>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                        </li>
 
                     <?php } ?>
 
@@ -199,6 +198,23 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid eb-season-fluxograma">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="<?= base_url(); ?>/style/img/INFLUENCERS.png">
+                </div>
+                <div class="col-6">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
                 </div>
             </div>
         </div>
