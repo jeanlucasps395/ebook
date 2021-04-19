@@ -1,6 +1,6 @@
 <div class="widhtPadrao">	
 	<div class="bg-painel">
-		<h1>Lista de cursos</h1>
+		<h1>Lista de Promoções Comerciais em Andamento</h1>
 	</div>
 	<div class="blocoDashboard">
 		<div class="listOptions">
