@@ -55,6 +55,36 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- Seja nosso parceiro -->
+    <div class="container" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-12">
+                <div class="eb-season-emphasis">
+                    <h1>Sejá nosso parceiro!!!</h1>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Deixe sue email e entraremos em contato</p>
+                        <div class="footerMenu__block">
+                         <div class="footerMenu__block--btn">
+                            <input style="border: 1px solid #666; color: #666" placeholder="Digite seu email aqui" type="email" name="" id="">
+                            <button style="padding: 10px 18px !important;">Enviar</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p style="font-weight: bolder;font-size: 18px;">Por que ser parceiro RAGA ?</p>
+                        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et adipiscing elit, sed do eiusmod tempor incididunt ut labore et "</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Formulario  -->
     <?php } ?>
 
@@ -64,12 +94,12 @@
         <i class="fab fa-twitter"></i>
     </div>
 
-    <div class="footerMenu">
+    <div class="footerMenu" id="contato">
         <div class="widthPadrao">
             <div class="row">
                 <div class="col-12 col-md-5">
                     <ul>
-                        <li class="footerMenu__img"><img class="img-fluid" src="<?= base_url('style/'); ?>img/logo-footer.png" alt="logo"></li>
+                        <li class="footerMenu__img"><img class="img-fluid" src="<?= base_url('style/'); ?>img/logo-text.png" alt="logo"></li>
                         <div class="footerMenu__block">
                             <li class="footerMenu__block--btn">
                                 <input placeholder="Digite seu email aqui" type="email" name="" id="">

@@ -11,7 +11,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, height=device-height">
   <meta name="theme-color" content="#2E3192">
-  <title>Ebook</title>
+  <title>Raga</title>
   <meta name="robots" content="index,follow">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
@@ -98,11 +98,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
           <a class="nav-link atAnc" href="#quemSomos">Quem Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('home/search'); ?>">E-books</a>
+          <a class="nav-link" href="<?= base_url('home/search'); ?>">Promoções comerciais</a>
         </li>
         <?php if ($this->session->userdata('email') != null) { ?>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('home/myEbooks'); ?>">Meus E-books</a>
+            <a class="nav-link" href="<?= base_url('home/myEbooks'); ?>">Minhas Prmoções</a>
           </li>
           <li class="nav-item">
             <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>
@@ -125,13 +125,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
     <nav class="navbar navbar-expand-md navbar-dark header-block">
 
-      <div class="col-xl-7 col-lg-5 col-md-4 col-sm-6 col-6">
-        <!-- <a class="navbar-brand" href="<?= base_url('home/index'); ?>"> -->
+      <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6">
+        <a  href="<?= base_url('home/index'); ?>">
           <img src="<?= base_url('style/img/logo-text.png'); ?>" class="header-block__logo" style="width: 125px;">
-        
+        </a>  
       </div>
 
-      <div class="col-xl-5 col-lg-7 col-md-8 col-sm-6 col-6 p0">
+      <div class="col-xl-6 col-lg-8 col-md-8 col-sm-6 col-6 p0">
 
         <div class="d-none d-sm-block">
           <button class="navbar-toggler header-block_toogle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -152,12 +152,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
               <a class="nav-link" href="#quemSomos">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('home/search'); ?>">E-books</a>
+              <a class="nav-link" href="<?= base_url('home/search'); ?>">Promoções comerciais</a>
             </li>
 
             <?php if ($this->session->userdata('email') != null) { ?>
               <li class="nav-item">
-                <a class="nav-link"  href="<?= base_url('home/myEbooks'); ?>">Meus E-books</a>
+                <a class="nav-link"  href="<?= base_url('home/myEbooks'); ?>">Minhas Prmoções</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link color-green" href="#"><?= $this->session->userdata('nome'); ?></a>

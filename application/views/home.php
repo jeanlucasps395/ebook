@@ -7,9 +7,9 @@
                     <!-- <img src="https://via.placeholder.com/485x642/243e66"> -->
                     <div class="eb-season-one__img--text">
                         <h3>Promoções Comerciais em Andamento e sorteios</h3>
-                        <a href="<?= base_url('home/search'); ?>"><button>Ler agora</button></a>
+                        <a href="<?= base_url('home/search'); ?>"><button>Ver agora</button></a>
                     </div>
-                    <h6>Sorteio ou E-book destaque</h6>
+                    <!-- <h6>Sorteio ou E-book destaque</h6> -->
                 </div>
                 <div class="eb-season-one__text col-12 col-md-6">
                     <div class="eb-season-one__text--title">
@@ -150,7 +150,7 @@
                             </div>
                             <div class="eb-season-slick__background" style="background: url(<?php echo base_url('upload/cursos/curso_') . $cursos['id_curso'] . '/capa.png'; ?>) center center no-repeat;background-size: cover; ">
                                 <p class="eb-season-slick__background--text">
-                                    <a href="<?php echo base_url('home/pgCursos?id=') . $cursos['id_curso']; ?>">Ler agora mesmo</a>
+                                    <a href="<?php echo base_url('home/pgCursos?id=') . $cursos['id_curso']; ?>">Ver agora mesmo</a>
                                 </p>
                             </div>
                             <div class="eb-season-slick__footer d-flex">
@@ -246,6 +246,14 @@
                     <img src="<?= base_url(); ?>/style/img/INFLUENCERS.png">
                 </div>
                 <div class="col-6">
+                    <div class="container-fluid eb-season-think" style="background: #fff">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-12">
+                                <h1>Como funciona a RAGA?</h1>
+                            </div>
+                        </div>
+                    </div>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>

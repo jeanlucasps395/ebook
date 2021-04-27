@@ -127,7 +127,7 @@
 
             <div class="col-12">
                 <div class="eb-season-emphasis">
-                    <h1>Outros E-books</h1>
+                    <h1>Outras Promoções comerciais</h1>
                 </div>
 
                 <!-- Slick jobson -->
