@@ -177,13 +177,13 @@ class Home extends CI_Controller
         $paymentRequest->setCurrency("BRL");  
 
         // Referenciando a transação do PagSeguro em seu sistema  
-        $paymentRequest->setReference("REF123");  
+        $paymentRequest->setReference("REF");  
         
         // URL para onde o comprador será redirecionado (GET) após o fluxo de pagamento  
-        $paymentRequest->setRedirectUrl("http://www.lojamodelo.com.br");  
+        $paymentRequest->setRedirectUrl("https://ragaparticipacoes.com.br/home/myEbooks");  
         
         // URL para onde serão enviadas notificações (POST) indicando alterações no status da transação  
-        $paymentRequest->addParameter('notificationURL', 'http://www.lojamodelo.com.br/nas'); 
+        $paymentRequest->addParameter('notificationURL', 'https://ragaparticipacoes.com.br/home/notificacoes'); 
         
         try {  
 
@@ -215,4 +215,7 @@ class Home extends CI_Controller
         echo json_encode($this->inicio->searchCurso($this->input->post('search'))); 
     }
 
+    function notificacoes(){
+
+    }
 }

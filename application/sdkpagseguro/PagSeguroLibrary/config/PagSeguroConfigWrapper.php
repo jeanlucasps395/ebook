@@ -31,11 +31,11 @@ class PagSeguroConfigWrapper
     /**
      *
      */
-    const PAGSEGURO_EMAIL = "suporte@tutoriaiseinformatica.com";
+    const PAGSEGURO_EMAIL = "ragaparticipacoes@gmail.com";
     /**
      *
      */
-    const PAGSEGURO_TOKEN_PRODUCTION = "09657a68-cb21-4a7a-9f55-e058f5ea8401eebab2e14fbf8f4e6465f980256b03b0c11e-85ef-401d-9360-23d433aeef9f";
+    const PAGSEGURO_TOKEN_PRODUCTION = "94c12597-31ea-4668-b774-27add0b765257c69bea04417a18f64b3849214cc00769462-743f-4493-8d06-cb660887954a";
     /**
      *
      */
